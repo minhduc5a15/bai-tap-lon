@@ -1,0 +1,13 @@
+"D:\Programs\CLion 2023.3.2\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug "-DCMAKE_MAKE_PROGRAM=D:/Programs/CLion 2023.3.2/bin/ninja/win/x64/ninja.exe" -G Ninja -S D:\code\Repositories\raylib_project -B D:\code\Repositories\raylib_project\cmake-build-debug
+-- Configuring done (0.1s)
+CMake Error at CMakeLists.txt:10 (add_executable):
+  Cannot find source file:
+
+    main.c
+
+
+CMake Error at CMakeLists.txt:10 (add_executable):
+  No SOURCES given to target: raylib_project
+
+
+CMake Generate step failed.  Build files cannot be regenerated correctly.
