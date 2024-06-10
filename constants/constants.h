@@ -1,12 +1,16 @@
 #ifndef CONSTANTS_H
 #define CONSTANTS_H
+
 #include <stdio.h>
-#include <raylib.h>
 #include <stdlib.h>
-#include <string.h>
 #include <stdbool.h>
+#include <string.h>
+#include <math.h>
 #include <unistd.h>
 #include <time.h>
+#include <raylib.h>
+#define mousePos GetMousePosition()
+typedef void (*Callback)();
 extern const int SCREEN_WIDTH; /* px */
 extern const int SCREEN_HEIGHT; /* px */
 extern const int FPS; /* Frames per second */
