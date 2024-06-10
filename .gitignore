@@ -1,1 +1,3 @@
-cmake-build-debugg
+cmake-build-debug
+*.exe
+test.c
