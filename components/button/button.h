@@ -3,12 +3,6 @@
 
 #include "../common.h"
 
-struct ColorProp {
-    Color backgroundColor;
-    Color textColor;
-};
-typedef struct ColorProp ColorProp;
-
 struct Button {
     Rectangle rect;
     char *value;
@@ -19,9 +13,11 @@ struct Button {
 
 typedef struct Button Button;
 
-void ButtonInit(Button *button, float x, float y, float width, float height, const char *value, Font buttonFont, Color backgroundColor, Color textColor);
+__attribute__((unused)) void ButtonInit(Button *button, float x, float y, float width, float height, const char *value, Font buttonFont, Color backgroundColor, Color textColor);
 
-void ButtonInitWithRect(Button *button, Rectangle rect, const char *value, Font buttonFont, Color backgroundColor, Color textColor);
+__attribute__((unused)) void ButtonInitWithRect(Button *button, Rectangle rect, const char *value, Font buttonFont, Color backgroundColor, Color textColor);
+
+__attribute__((unused)) void setOpacity(Button *button, float opacity);
 
 void Hello();
 
