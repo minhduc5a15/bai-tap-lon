@@ -1,3 +1,7 @@
 cmake-build-debug
 *.exe
 test.c
+*.css
+*.html
+*.py
+Crawl
