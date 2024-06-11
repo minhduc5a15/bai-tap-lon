@@ -2,6 +2,7 @@
 #define CONTAINER_H
 
 #include "../common.h"
+
 // Cấu trúc của một container
 struct Container {
     Image img; // Hình ảnh của thùng chứa
@@ -9,6 +10,7 @@ struct Container {
     Rectangle srcRect;
     Rectangle destRect;
     V2 origin;
+    char *value;
 };
 
 typedef struct Container Container;
@@ -21,6 +23,9 @@ void DrawContainer(Container container, float rotation, Color color);
 
 // Lắng nghe sự kiện onClick cho container
 void onClickContainer(Container container, Callback callback);
+
+// Chỉnh sửa giá trị cho Container
+void setContainerValue(Container *container, char *value);
 
 // Lắng nghe sự kiện onHover cho container
 void onHoverContainer(Container container);

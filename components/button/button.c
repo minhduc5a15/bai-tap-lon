@@ -47,19 +47,15 @@ __attribute__((unused)) void DrawButton(const Button button, int radius) {
     DrawTextEx(button.font, button.value, (V2) {textX, textY}, button.font.baseSize, 1, button.textColor);
 }
 
-void Hello() {
-    printf("Hello World\n");
-}
-
 // lắng nghe sự kiện onClickButton khi click vào button, đồng thời gọi hàm callback
-void onClickButton(Button button, Callback callback) {
+__attribute__((unused)) void onClickButton(Button button, Callback callback) {
     if (isClicked() && CheckCollisionPointRec(mousePos, button.rect)) {
         callback();
     }
 }
 
 // tùy chỉnh con trỏ chuột khi hover vào button
-void onHoverButton(Button button) {
+__attribute__((unused)) void onHoverButton(Button button) {
     if (CheckCollisionPointRec(mousePos, button.rect)) {
         SetMouseCursor(MOUSE_CURSOR_POINTING_HAND);
         return;

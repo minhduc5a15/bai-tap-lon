@@ -9,5 +9,5 @@ CMake Deprecation Warning:
 
 
 -- Configuring done (0.1s)
--- Generating done (0.1s)
+-- Generating done (0.0s)
 -- Build files have been written to: D:/code/Repositories/raylib_project/cmake-build-debug

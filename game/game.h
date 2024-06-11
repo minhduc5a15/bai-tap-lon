@@ -3,19 +3,26 @@
 
 #include "../common.h"
 extern Container bgContainer;
-
+extern Container currQuestion;
+extern Container *questionsData;
+extern struct Question;
 #ifdef __cplusplus
 extern "C" {
 #endif
+// ----------------------Background----------------------
+void backgroundImageInit(void);
 
 void setBackgroundImage(void);
 
-void BackgroundImageInit(void);
+// ----------------------Questions----------------------
+void generateQuestions(void);
 
+void questionInit(void);
 
+void setCurrentQuest(void);
 
 #ifdef __cplusplus
 }
 #endif
 
-#endif
+#endif // GAME_H
