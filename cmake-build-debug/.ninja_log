@@ -1,11 +1,11 @@
 # ninja log v5
 61	187	7396361766588674	raylib.exe	4bb6d072e97e9408
 2	108	7397438289043221	CMakeFiles/raylib_project.dir/components/button/button.c.obj	7832fd202d636ece
-0	166	7397445824038560	build.ninja	5735ee4a1a497aaa
+0	166	7397480823081721	build.ninja	5735ee4a1a497aaa
 12	66	7396628564474383	CMakeFiles/raylib_project.dir/test.c.obj	d7dd43a08909f3f3
 6	78	7396508372338213	CMakeFiles/raylib_project.dir/library.c.obj	1ce2aed1a31a7b0
 3	89	7397436893812264	CMakeFiles/raylib_project.dir/main.c.obj	d38e02d44e843ee3
-81	173	7397440470074120	raylib_project.exe	6261c3cb036db58c
+90	223	7397454756859423	raylib_project.exe	6261c3cb036db58c
 4	66	7396409119697018	CMakeFiles/raylib_project.dir/components/grid.c.obj	60333df667959307
 4	72	7396628564534380	CMakeFiles/raylib_project.dir/CMakeFiles/3.27.8/CompilerIdC/CMakeCCompilerId.c.obj	2a157098290d6212
 6	102	7396626442344666	CMakeFiles/raylib_project.dir/components/grid/grid.c.obj	c6011011a68ad0d2
@@ -13,6 +13,4 @@
 10	109	7397436729018033	CMakeFiles/raylib_project.dir/components/input/input.c.obj	6d3c271716c1f9a3
 7	63	7396628564434384	CMakeFiles/raylib_project.dir/constants.c.obj	1d1b8326c6ea1fdf
 2	81	7397440469194087	CMakeFiles/raylib_project.dir/functions/functions.c.obj	86e266d54f85fb5
-3	44	7397424178980893	CMakeFiles/raylib_project.dir/constants/constants.c.obj	c95fff201fc39966
 2	90	7397454755549031	CMakeFiles/raylib_project.dir/constants/constants.c.obj	c95fff201fc39966
-90	223	7397454756859423	raylib_project.exe	6261c3cb036db58c

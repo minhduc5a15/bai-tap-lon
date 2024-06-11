@@ -21,10 +21,10 @@ __attribute__((unused)) void setOpacity(Button *button, float opacity);
 
 void Hello();
 
-void onClick(Button button, Callback callback);
+void onClickButton(Button button, Callback callback);
 
 void DrawButton(const Button button, int radius);
 
-void onHover(Button button);
+void onHoverButton(Button button);
 
 #endif

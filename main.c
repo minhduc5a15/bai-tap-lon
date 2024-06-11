@@ -1,13 +1,15 @@
-#include "constants/constants.h"
-#include "components/headers.h"
+#include "game/game.h"
 
 int main() {
     InitWindow(SCREEN_WIDTH, SCREEN_HEIGHT, TITLE_WINDOW_LOGIN);
     SetTargetFPS(FPS);
+
+    BackgroundImageInit();
+
     while (!WindowShouldClose()) {
         BeginDrawing();
         {
-            DrawRectangle(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT, (Color) {0, 0, 0, 128});
+            setBackgroundImage();
         }
         EndDrawing();
     }
