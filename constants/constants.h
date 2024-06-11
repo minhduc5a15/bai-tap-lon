@@ -9,6 +9,7 @@
 #include <unistd.h>
 #include <time.h>
 #include <raylib.h>
+#include <cjson/cJSON.h>
 #define mousePos GetMousePosition()
 
 typedef void (*Callback)();
@@ -41,8 +42,9 @@ extern const int FPS; /* Frames per second */
 extern const int INPUT_PADDING_LEFT; /*px */
 extern const char *BACKGROUND_IMAGE_DIR; /* Đường dẫn tới background */
 extern const char *QUESTION_IMAGE_DIR; /* Đường dẫn tới background của câu hỏi */
+extern const char *DEFAULT_FONT_DIR;
 extern const char *START_BUTTON_DIR;
 extern const char *TITLE_WINDOW_LOGIN;
 extern const char *TITLE_WINDOW_GAME;
-extern const Color transparent;
+extern const Color TRANSPARENT;
 #endif

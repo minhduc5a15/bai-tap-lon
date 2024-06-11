@@ -4,13 +4,22 @@
 #include "../common.h"
 
 // Cấu trúc của một container
+
+struct Text {
+    char *value;
+    Font font;
+    Color color;
+};
+
+typedef struct Text Text;
+
 struct Container {
     Image img; // Hình ảnh của thùng chứa
     T2 texture;
     Rectangle srcRect;
     Rectangle destRect;
     V2 origin;
-    char *value;
+    Text value;
 };
 
 typedef struct Container Container;
@@ -25,7 +34,7 @@ void DrawContainer(Container container, float rotation, Color color);
 void onClickContainer(Container container, Callback callback);
 
 // Chỉnh sửa giá trị cho Container
-void setContainerValue(Container *container, char *value);
+void setContainerValue(Container *container, Text value);
 
 // Lắng nghe sự kiện onHover cho container
 void onHoverContainer(Container container);

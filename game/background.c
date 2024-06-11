@@ -11,5 +11,5 @@ void backgroundImageInit(void) {
 
 void setBackgroundImage(void) {
     DrawContainer(bgContainer, 0, WHITE);
-    DrawRectangle(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT, (Color) {0, 0, 0, 128});
+    DrawRectangle(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT, (Color) {0, 0, 0, 155});
 }

@@ -18,8 +18,8 @@ void DrawRectWithBorderRadius(Rectangle rect, int radius, Color color) {
     DrawRectangle(rect.x + radius, rect.y, rect.width - 2 * radius, rect.height, color);
 
     // Vẽ bốn góc cong
-    DrawCircleSector((Vector2) {rect.x + radius, rect.y + radius}, radius, 180, 270, 36, color);
-    DrawCircleSector((Vector2) {rect.x + rect.width - radius, rect.y + radius}, radius, 270, 360, 36, color);
-    DrawCircleSector((Vector2) {rect.x + radius, rect.y + rect.height - radius}, radius, 90, 180, 36, color);
-    DrawCircleSector((Vector2) {rect.x + rect.width - radius, rect.y + rect.height - radius}, radius, 0, 90, 36, color);
+    DrawCircleSector((V2) {rect.x + radius, rect.y + radius}, radius, 180, 270, 36, color);
+    DrawCircleSector((V2) {rect.x + rect.width - radius, rect.y + radius}, radius, 270, 360, 36, color);
+    DrawCircleSector((V2) {rect.x + radius, rect.y + rect.height - radius}, radius, 90, 180, 36, color);
+    DrawCircleSector((V2) {rect.x + rect.width - radius, rect.y + rect.height - radius}, radius, 0, 90, 36, color);
 }

@@ -8,6 +8,7 @@ __attribute__((unused)) void ButtonInit(Button *button, float x, float y, float 
     button->backgroundColor = backgroundColor;
     button->textColor = textColor;
     button->font = buttonFont;
+    
 }
 
 // Hàm khởi tạo một button với rect cho trước
@@ -18,6 +19,7 @@ __attribute__((unused)) void ButtonInitWithRect(Button *button, Rectangle rect, 
     button->backgroundColor = backgroundColor;
     button->textColor = textColor;
     button->font = buttonFont;
+//    UnloadTexture(button->font.texture);
 }
 
 __attribute__((unused)) void setOpacity(Button *button, float opacity) {

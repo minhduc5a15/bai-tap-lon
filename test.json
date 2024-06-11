@@ -1,86 +1,166 @@
 {
     "1-5": {
         "1": {
-            "content": "",
+            "content": "Đâu là một khái niệm trong vật lí",
             "answers": {
-                "A": "",
-                "B": "",
-                "C": "",
-                "D": ""
+                "A": "Áp đặt",
+                "B": "Áp chảo",
+                "C": "Áp giải",
+                "D": "Áp lực"
             },
-            "correct_answer": "A"
+            "correct_answer": "D"
         },
         "2": {
-            "content": "",
+            "content": "Cocktail là gì?",
             "answers": {
-                "A": "",
-                "B": "",
-                "C": "",
-                "D": ""
+                "A": "1 loại cốc",
+                "B": "1 loại đồ uống",
+                "C": "1 bộ phận cơ thể",
+                "D": "1 loài động vật"
             },
-            "correct_answer": "A"
+            "correct_answer": "B"
         },
         "3": {
-            "content": "",
+            "content": "Môn võ nào sau đây có nguồn gốc từ Việt Nam",
             "answers": {
-                "A": "",
-                "B": "",
-                "C": "",
-                "D": ""
+                "A": "Vovinam",
+                "B": "Karatedo",
+                "C": "Judo",
+                "D": "Aikido"
             },
             "correct_answer": "A"
         },
         "4": {
-            "content": "",
+            "content": "Câu thành ngữ nào dùng để nói về những người lười biếng, không chịu làm ăn",
             "answers": {
-                "A": "",
-                "B": "",
-                "C": "",
-                "D": ""
+                "A": "Ăn chực nằm chờ",
+                "B": "Ăn không ngồi rồi",
+                "C": "Ăn cháo đá bát",
+                "D": "Ăn chắc mặc bền"
             },
-            "correct_answer": "A"
+            "correct_answer": "B"
         },
         "5": {
-            "content": "",
+            "content": "Trần Quốc Toản đã tức giận bóp nát quả gì khi không được tham gia hội nghị Bình Than?",
             "answers": {
-                "A": "",
-                "B": "",
-                "C": "",
-                "D": ""
+                "A": "Quả đào",
+                "B": "Quả mận",
+                "C": "Quả cam",
+                "D": "Quả táo"
             },
-            "correct_answer": "A"
+            "correct_answer": "C"
         },
         "6": {
-            "content": "",
+            "content": "Đâu là tên một loại dép?",
             "answers": {
-                "A": "",
-                "B": "",
-                "C": "",
-                "D": ""
+                "A": "Tổ tò vò",
+                "B": "Tổ ong",
+                "C": "Tổ kiến",
+                "D": "Tổ chim"
             },
-            "correct_answer": "A"
+            "correct_answer": "B"
         },
         "7": {
-            "content": "",
+            "content": "Câu nào sau đây có ý nói về việc làm thừa thãi không cần thiết?",
             "answers": {
-                "A": "",
-                "B": "",
-                "C": "",
-                "D": ""
+                "A": "Mèo mù vớ cá rán",
+                "B": "Chín người mười ý",
+                "C": "Dạy khỉ trèo cây",
+                "D": "Góp gió thành bão"
             },
-            "correct_answer": "A"
+            "correct_answer": "C"
         },
         "8": {
-            "content": "",
+            "content": "Trong truyện ngụ ngôn 'Trí khôn của ta đây', con vật nào gẫy hết răng vì cười",
             "answers": {
-                "A": "",
-                "B": "",
-                "C": "",
-                "D": ""
+                "A": "Chó",
+                "B": "Ngựa",
+                "C": "Trâu",
+                "D": "Gà"
             },
-            "correct_answer": "A"
+            "correct_answer": "C"
         },
         "9": {
+            "content": "Trong những câu thơ của nhà thơ Nguyễn Nhược Pháp 'Cùng thầy me em dậy. Em vấn đầu soi gương', cô gái sửa soạn để đi đâu?",
+            "answers": {
+                "A": "Đền Trần",
+                "B": "Chùa Hương",
+                "C": "Chùa Phật Tích",
+                "D": "Chùa Thiên Mụ"
+            },
+            "correct_answer": "B"
+        },
+        "10": {
+            "content": "Gạo ST25 là loại đặc sản có nguồn gốc từ tỉnh thành nào?",
+            "answers": {
+                "A": "Cần Thơ",
+                "B": "Đồng Tháp",
+                "C": "Sóc Trăng",
+                "D": "Vĩnh Long"
+            },
+            "correct_answer": "C"
+        },
+        "11": {
+            "content": "Ở phương Tây, ai là người phân phát quà cho trẻ em qua ống khói?",
+            "answers": {
+                "A": "Cô tiên mùa xuân",
+                "B": "Ông già Noel",
+                "C": "Công chúa Tuyết",
+                "D": "Con tuần lộc"
+            },
+            "correct_answer": "B"
+        },
+        "12": {
+            "content": "Cụm từ nào dưới đây có nghĩa là 'Chúc mừng năm mới'?",
+            "answers": {
+                "A": "New Year",
+                "B": "Happy birthday",
+                "C": "Happy year",
+                "D": "Happy new year"
+            },
+            "correct_answer": "D"
+        },
+        "13": {
+            "content": "Thằng Bờm đồng ý đổi quạt mo cho phú ông lấy cái gì?",
+            "answers": {
+                "A": "Chim đồi mồi",
+                "B": "Bè gỗ lim",
+                "C": "Ao sâu cá mè",
+                "D": "Nắm xôi"
+            },
+            "correct_answer": "D"
+        },
+        "14": {
+            "content": "Món Cà-ri thường có màu gì?",
+            "answers": {
+                "A": "Trắng",
+                "B": "Xanh nhạt",
+                "C": "Vàng",
+                "D": "Hồng nhạt"
+            },
+            "correct_answer": "C"
+        },
+        "15": {
+            "content": "Môn khoa học nào liên quan đến động thực vật?",
+            "answers": {
+                "A": "Sinh vật học",
+                "B": "Hóa học",
+                "C": "Vật lý học",
+                "D": "Thiên văn học"
+            },
+            "correct_answer": "A"
+        },
+        "16": {
+            "content": "Con vật nào là một trong những nhân vật chính trong tác phẩm 'Tây Du Ký' của tác giả Ngô Thừa Ân",
+            "answers": {
+                "A": "Bò",
+                "B": "Lợn",
+                "C": "Gà",
+                "D": "Mèo"
+            },
+            "correct_answer": "B"
+        },
+        "17": {
             "content": "",
             "answers": {
                 "A": "",
@@ -90,122 +170,242 @@
             },
             "correct_answer": "A"
         },
-        "10": {
-            "content": "",
+        "18": {
+            "content": "'Quỷ đỏ' là biệt danh của câu lạc bộ bóng đá nào của Anh",
             "answers": {
-                "A": "",
-                "B": "",
-                "C": "",
-                "D": ""
+                "A": "Manchester United",
+                "B": "Everton",
+                "C": "Arsenal",
+                "D": "Southampton"
             },
             "correct_answer": "A"
+        },
+        "19": {
+            "content": "Một câu chuyện cổ tích thường bắt đầu bằng từ gì?",
+            "answers": {
+                "A": "Một hôm",
+                "B": "Hồi ấy",
+                "C": "Lâu lắm rồi",
+                "D": "Ngày xửa, này xưa"
+            },
+            "correct_answer": "D"
+        },
+        "20": {
+            "content": "Từ nào sau đây chỉ tên của một loại trái cây?",
+            "answers": {
+                "A": "Ễnh ương",
+                "B": "Cóc",
+                "C": "Nhái bén",
+                "D": "Mòng"
+            },
+            "correct_answer": "B"
+        },
+        "21": {
+            "content": "Đâu là tên của một tập truyện nổi tiếng?",
+            "answers": {
+                "A": "Nghìn lẻ một tháng",
+                "B": "Nghìn lẻ một năm",
+                "C": "Nghìn lẻ một tuần",
+                "D": "Nghìn lẻ một đêm"
+            },
+            "correct_answer": "D"
+        },
+        "22": {
+            "content": "Trong bẳng tuần hoàn Mendeleev, nguyên tố hóa học Poloni được viết như thế nào?",
+            "answers": {
+                "A": "K",
+                "B": "Na",
+                "C": "Ba",
+                "D": "Po"
+            },
+            "correct_answer": "D"
+        },
+        "23": {
+            "content": "Theo truyền thuyết, người mẹ ướm chân vào vết chân to trên ruộng và đã sinh ra ai?",
+            "answers": {
+                "A": "Sơn Tinh",
+                "B": "Trọng Thủy",
+                "C": "Mị Nương",
+                "D": "Thánh Gióng"
+            },
+            "correct_answer": "D"
+        },
+        "24": {
+            "content": "Công dân Việt Nam đủ bao nhiêu tuổi sẽ được gọi nhập ngũ?",
+            "answers": {
+                "A": "16",
+                "B": "18",
+                "C": "20",
+                "D": "22"
+            },
+            "correct_answer": "B"
+        },
+        "25": {
+            "content": "'Richter' là thang đo để xác định sức tàn phá của hiện tượng nào?",
+            "answers": {
+                "A": "Lốc xoáy",
+                "B": "Hạn hán",
+                "C": "Động đất",
+                "D": "Sét"
+            },
+            "correct_answer": "C"
         }
     },
     "5-10": {
         "1": {
-            "content": "",
+            "content": "'Gió mưa là bệnh của trời\nTương tư là bệnh của tôi yêu nàng' là câu thơ của tác giả nào?",
             "answers": {
-                "A": "",
-                "B": "",
-                "C": "",
-                "D": ""
+                "A": "Xuân Diệu",
+                "B": "Nguyễn Bính",
+                "C": "Chế Lan Viên",
+                "D": "Thâm Tâm"
             },
-            "correct_answer": "A"
+            "correct_answer": "B"
         },
         "2": {
-            "content": "",
+            "content": "Ca khúc 'Mùa xuân trên thành phố Hồ Chí Minh' được bắt đầu bằng từ nào?",
             "answers": {
-                "A": "",
-                "B": "",
-                "C": "",
-                "D": ""
+                "A": "Thành phố",
+                "B": "Đất trời",
+                "C": "Mùa xuân",
+                "D": "Quê hương"
             },
-            "correct_answer": "A"
+            "correct_answer": "C"
         },
         "3": {
-            "content": "",
+            "content": "Theo một câu ca dân gian thì trăng mùng một có hình gì?",
             "answers": {
-                "A": "",
-                "B": "",
-                "C": "",
-                "D": ""
+                "A": "Lưỡi trai",
+                "B": "Lưỡi đười ươi",
+                "C": "Lưỡi rắn",
+                "D": "Lưỡi tê giác"
             },
             "correct_answer": "A"
         },
         "4": {
-            "content": "",
+            "content": "Modem là thiết bị dùng để làm gì",
             "answers": {
-                "A": "",
-                "B": "",
-                "C": "",
-                "D": ""
+                "A": "Giải mã",
+                "B": "Ngăn chặn virus",
+                "C": "Kết nối hai máy tính",
+                "D": "Lọc thư rác"
             },
-            "correct_answer": "A"
+            "correct_answer": "C"
         },
         "5": {
-            "content": "",
+            "content": "Tổng thư ký Liên Hợp Quốc Kofi Annan là người nước nào?",
             "answers": {
-                "A": "",
-                "B": "",
-                "C": "",
-                "D": ""
+                "A": "Ai Cập",
+                "B": "Ghana",
+                "C": "Ả Rập",
+                "D": "Nigeria"
             },
-            "correct_answer": "A"
+            "correct_answer": "B"
         },
         "6": {
-            "content": "",
+            "content": "Tuyến đường sắt nào được xây dựng đầu tiên ở nước ta?",
             "answers": {
-                "A": "",
-                "B": "",
-                "C": "",
-                "D": ""
+                "A": "Hà Nội - Hải Phòng",
+                "B": "Hà Nội - Lào Cai",
+                "C": "Hà Nội - Lạng Sơn",
+                "D": "Sài Gòn - Mỹ Tho"
             },
-            "correct_answer": "A"
+            "correct_answer": "D"
         },
         "7": {
-            "content": "",
+            "content": "Món đặc sản nổi tiếng của người Mường ở huyện Thanh Sơn (Phú Thọ) có tên gọi là gì?",
             "answers": {
-                "A": "",
-                "B": "",
-                "C": "",
-                "D": ""
+                "A": "Thịt hun",
+                "B": "Thịt cay",
+                "C": "Thịt chua",
+                "D": "Thịt giằng"
             },
-            "correct_answer": "A"
+            "correct_answer": "C"
         },
         "8": {
-            "content": "",
+            "content": "Lục địa nào là quê hương của những câu chuyện ngụ ngôn Timbuktu?",
             "answers": {
-                "A": "",
-                "B": "",
-                "C": "",
-                "D": ""
+                "A": "Châu Mỹ",
+                "B": "Châu Phi",
+                "C": "Châu Á",
+                "D": "Châu Đại Dương"
             },
-            "correct_answer": "A"
+            "correct_answer": "B"
         },
         "9": {
-            "content": "",
+            "content": "Năm nhuận 2023 có hai tháng âm lịch nào sau đây?",
             "answers": {
-                "A": "",
-                "B": "",
-                "C": "",
-                "D": ""
+                "A": "Tháng hai",
+                "B": "Tháng ba",
+                "C": "Tháng tư",
+                "D": "Tháng chạp"
             },
             "correct_answer": "A"
         },
         "10": {
-            "content": "",
+            "content": "Thành phố nào trên thế giới được mệnh danh là 'Thành phố trắng của phương Bắc'?",
             "answers": {
-                "A": "",
-                "B": "",
-                "C": "",
-                "D": ""
+                "A": "Oslo",
+                "B": "Helsinki",
+                "C": "Conenhagen",
+                "D": "Stockholm"
             },
-            "correct_answer": "A"
+            "correct_answer": "B"
+        },
+        "11": {
+            "content": "Phòng tuyến sông Như Nguyệt và bài thơ 'Nam quốc sơn hà' gắn liền với tên tuổi của vị danh tướng nào?",
+            "answers": {
+                "A": "Ngô Quyền",
+                "B": "Lý Thường Kiệt",
+                "C": "Trần Hưng Đạo",
+                "D": "Quang Trung"
+            },
+            "correct_answer": "B"
+        },
+        "12": {
+            "content": "Linh vật của World Cup nữ 2023 mang hình tượng con vật gì?",
+            "answers": {
+                "A": "Chuột túi",
+                "B": "Đà điểu",
+                "C": "Chim cánh cụt",
+                "D": "Gấu túi"
+            },
+            "correct_answer": "C"
+        },
+        "13": {
+            "content": "Tính đến hết năm 2022, tác phẩm nghệ thuật đắt giá nhất thể kỷ 20 trong lịch sử đấu giá công khai là bức tranh chân dung của ngôi sao giải trí nào?",
+            "answers": {
+                "A": "Michael Jackson",
+                "B": "Whitney Houston",
+                "C": "Charlie Chaplin",
+                "D": "Marilyn Monroe"
+            },
+            "correct_answer": "D"
+        },
+        "14": {
+            "content": "Bánh chưng đen là món ăn truyền thống nổi tiếng nhất của dân tộc nào ở Việt Nam?",
+            "answers": {
+                "A": "Khơ Mú",
+                "B": "Hà Nhì",
+                "C": "Tày",
+                "D": "Mường"
+            },
+            "correct_answer": "C"
+        },
+        "15": {
+            "content": "'Quả cầu pha lê' là giải thưởng lớn cảu Liên hoan phim quốc tế nào?",
+            "answers": {
+                "A": "Liên hoan phim Tokyo",
+                "B": "Liên hoan phim Cairo",
+                "C": "Liên hoan phim Karlovy Vary",
+                "D": "Liên hoan phim Moskva"
+            },
+            "correct_answer": "C"
         }
     },
     "11-15": {
         "1": {
-            "content": "",
+            "content": "T",
             "answers": {
                 "A": "",
                 "B": "",
