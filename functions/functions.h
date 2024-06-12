@@ -11,5 +11,7 @@ void DrawRectWithBorderRadius(const Rectangle rect, int radius, Color color);
 
 bool isClicked();
 
+V2 getCenter(V2 parent, V2 child);
+
 #endif
 

@@ -39,7 +39,7 @@ void read_questions(cJSON *json_array, Question **questions, int *questions_coun
     }
 }
 
-void saveData(Question **db, int *data_count) {
+void saveData(Question **db, int *data_count, char *range) {
     const char *filename = "D:/code/Repositories/raylib_project/test.json";
     char *file_content = read_file(filename);
     if (!file_content) {
@@ -51,6 +51,6 @@ void saveData(Question **db, int *data_count) {
         printf("Error parsing JSON\n");
         return;
     }
-    read_questions(cJSON_GetObjectItemCaseSensitive(json, "1-5"), db, data_count);
+    read_questions(cJSON_GetObjectItemCaseSensitive(json, range), db, data_count);
     cJSON_Delete(json);
 }

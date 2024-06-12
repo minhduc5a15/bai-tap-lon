@@ -1,13 +1,12 @@
 #ifndef TEXT_H
 #define TEXT_H
-#include <raylib.h>
-#include <stdlib.h>
-#include <string.h>
+
+#include "../common.h"
 
 struct UnicodeText {
     Font font;
     char *fontDirectory;
-    char *text;
+    char *value;
     int codepointCount;
     int *codepoints;
     int *codepointsNoDups;
@@ -16,7 +15,8 @@ struct UnicodeText {
 
 typedef struct UnicodeText UnicodeText;
 
-void UnicodeTextInit(UnicodeText *unicodeText, char *fontDirectory, char *text);
+void UnicodeTextInit(UnicodeText *unicodeText, const char *fontDirectory, char *value);
 
 void DrawUnicodeText(UnicodeText unicodeText, Vector2 postion, float fontSize, float spacing, Color color);
+
 #endif

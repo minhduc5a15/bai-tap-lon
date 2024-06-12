@@ -8,15 +8,6 @@ CMake Deprecation Warning:
   use the cmake-file-api(7) to view CMake-generated project build trees.
 
 
--- The C compiler identification is GNU 14.1.0
--- Detecting C compiler ABI info
--- Detecting C compiler ABI info - done
--- Check for working C compiler: D:/Programs/msys64/mingw64/bin/cc.exe - skipped
--- Detecting C compile features
--- Detecting C compile features - done
--- Found PkgConfig: D:/Programs/msys64/mingw64/bin/pkg-config.exe (found version "2.2.0") 
--- Checking for module 'raylib'
---   Found raylib, version 4.5.0
--- Configuring done (1.1s)
--- Generating done (0.0s)
+-- Configuring done (0.1s)
+-- Generating done (0.1s)
 -- Build files have been written to: D:/code/Repositories/raylib_project/cmake-build-debug
