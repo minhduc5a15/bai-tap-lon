@@ -1,28 +1,16 @@
-#include "game/game.h"
+#include "constants/constants.h"
+#include "components/components.h"
 
-Question *questionDb = NULL;
-Question currentQuestion;
-int length, currentIndexQuestion;
-
-int main() {
-    InitWindow(SCREEN_WIDTH, SCREEN_HEIGHT, TITLE_WINDOW_LOGIN);
-    SetTargetFPS(FPS);
-    // Khởi tạo background
-    saveData(&questionDb, &length);
-    currentIndexQuestion = getRandomQuestion(1, length) - 1;
-    backgroundImageInit();
-    // Tải dữ liệu
-    for (int i = 0; i < length; i++) {
-        printf("question: %s\n", questionDb[i].content);
-    }
-    printf("length: %d, current id: %d\n", length, currentIndexQuestion);
-    currentQuestion = questionDb[currentIndexQuestion];
-    questionInit();
+int main(void) {
+    InitWindow(SCREEN_WIDTH, SCREEN_HEIGHT, "window");
+    SetTargetFPS(60);
+    UnicodeText text;
+    UnicodeTextInit(&text, "D:/code/Repositories/raylib_project/font/Roboto-Bold.ttf", "Đức đẹp trai");
     while (!WindowShouldClose()) {
         BeginDrawing();
         {
-            setBackgroundImage();
-            setCurrentQuest();
+            ClearBackground(BLACK);
+            DrawUnicodeText(text, (V2) {200, 200}, 42, 5, WHITE);
         }
         EndDrawing();
     }

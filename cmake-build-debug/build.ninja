@@ -55,11 +55,23 @@ build CMakeFiles/raylib_project.dir/main.c.obj: C_COMPILER__raylib_project_unsca
   OBJECT_DIR = CMakeFiles\raylib_project.dir
   OBJECT_FILE_DIR = CMakeFiles\raylib_project.dir
 
+build CMakeFiles/raylib_project.dir/constants/constants.c.obj: C_COMPILER__raylib_project_unscanned_Debug D$:/code/Repositories/raylib_project/constants/constants.c || cmake_object_order_depends_target_raylib_project
+  DEP_FILE = CMakeFiles\raylib_project.dir\constants\constants.c.obj.d
+  FLAGS = -g -std=gnu2x -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\raylib_project.dir
+  OBJECT_FILE_DIR = CMakeFiles\raylib_project.dir\constants
+
 build CMakeFiles/raylib_project.dir/components/button/button.c.obj: C_COMPILER__raylib_project_unscanned_Debug D$:/code/Repositories/raylib_project/components/button/button.c || cmake_object_order_depends_target_raylib_project
   DEP_FILE = CMakeFiles\raylib_project.dir\components\button\button.c.obj.d
   FLAGS = -g -std=gnu2x -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\raylib_project.dir
   OBJECT_FILE_DIR = CMakeFiles\raylib_project.dir\components\button
+
+build CMakeFiles/raylib_project.dir/components/container/container.c.obj: C_COMPILER__raylib_project_unscanned_Debug D$:/code/Repositories/raylib_project/components/container/container.c || cmake_object_order_depends_target_raylib_project
+  DEP_FILE = CMakeFiles\raylib_project.dir\components\container\container.c.obj.d
+  FLAGS = -g -std=gnu2x -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\raylib_project.dir
+  OBJECT_FILE_DIR = CMakeFiles\raylib_project.dir\components\container
 
 build CMakeFiles/raylib_project.dir/components/grid/grid.c.obj: C_COMPILER__raylib_project_unscanned_Debug D$:/code/Repositories/raylib_project/components/grid/grid.c || cmake_object_order_depends_target_raylib_project
   DEP_FILE = CMakeFiles\raylib_project.dir\components\grid\grid.c.obj.d
@@ -73,23 +85,41 @@ build CMakeFiles/raylib_project.dir/components/input/input.c.obj: C_COMPILER__ra
   OBJECT_DIR = CMakeFiles\raylib_project.dir
   OBJECT_FILE_DIR = CMakeFiles\raylib_project.dir\components\input
 
-build CMakeFiles/raylib_project.dir/window/login/login.c.obj: C_COMPILER__raylib_project_unscanned_Debug D$:/code/Repositories/raylib_project/window/login/login.c || cmake_object_order_depends_target_raylib_project
-  DEP_FILE = CMakeFiles\raylib_project.dir\window\login\login.c.obj.d
+build CMakeFiles/raylib_project.dir/components/text/text.c.obj: C_COMPILER__raylib_project_unscanned_Debug D$:/code/Repositories/raylib_project/components/text/text.c || cmake_object_order_depends_target_raylib_project
+  DEP_FILE = CMakeFiles\raylib_project.dir\components\text\text.c.obj.d
   FLAGS = -g -std=gnu2x -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\raylib_project.dir
-  OBJECT_FILE_DIR = CMakeFiles\raylib_project.dir\window\login
+  OBJECT_FILE_DIR = CMakeFiles\raylib_project.dir\components\text
 
-build CMakeFiles/raylib_project.dir/constants/constants.c.obj: C_COMPILER__raylib_project_unscanned_Debug D$:/code/Repositories/raylib_project/constants/constants.c || cmake_object_order_depends_target_raylib_project
-  DEP_FILE = CMakeFiles\raylib_project.dir\constants\constants.c.obj.d
+build CMakeFiles/raylib_project.dir/game/background.c.obj: C_COMPILER__raylib_project_unscanned_Debug D$:/code/Repositories/raylib_project/game/background.c || cmake_object_order_depends_target_raylib_project
+  DEP_FILE = CMakeFiles\raylib_project.dir\game\background.c.obj.d
   FLAGS = -g -std=gnu2x -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\raylib_project.dir
-  OBJECT_FILE_DIR = CMakeFiles\raylib_project.dir\constants
+  OBJECT_FILE_DIR = CMakeFiles\raylib_project.dir\game
+
+build CMakeFiles/raylib_project.dir/game/questions.c.obj: C_COMPILER__raylib_project_unscanned_Debug D$:/code/Repositories/raylib_project/game/questions.c || cmake_object_order_depends_target_raylib_project
+  DEP_FILE = CMakeFiles\raylib_project.dir\game\questions.c.obj.d
+  FLAGS = -g -std=gnu2x -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\raylib_project.dir
+  OBJECT_FILE_DIR = CMakeFiles\raylib_project.dir\game
+
+build CMakeFiles/raylib_project.dir/game/readfile.c.obj: C_COMPILER__raylib_project_unscanned_Debug D$:/code/Repositories/raylib_project/game/readfile.c || cmake_object_order_depends_target_raylib_project
+  DEP_FILE = CMakeFiles\raylib_project.dir\game\readfile.c.obj.d
+  FLAGS = -g -std=gnu2x -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\raylib_project.dir
+  OBJECT_FILE_DIR = CMakeFiles\raylib_project.dir\game
 
 build CMakeFiles/raylib_project.dir/functions/functions.c.obj: C_COMPILER__raylib_project_unscanned_Debug D$:/code/Repositories/raylib_project/functions/functions.c || cmake_object_order_depends_target_raylib_project
   DEP_FILE = CMakeFiles\raylib_project.dir\functions\functions.c.obj.d
   FLAGS = -g -std=gnu2x -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\raylib_project.dir
   OBJECT_FILE_DIR = CMakeFiles\raylib_project.dir\functions
+
+build CMakeFiles/raylib_project.dir/window/login/login.c.obj: C_COMPILER__raylib_project_unscanned_Debug D$:/code/Repositories/raylib_project/window/login/login.c || cmake_object_order_depends_target_raylib_project
+  DEP_FILE = CMakeFiles\raylib_project.dir\window\login\login.c.obj.d
+  FLAGS = -g -std=gnu2x -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\raylib_project.dir
+  OBJECT_FILE_DIR = CMakeFiles\raylib_project.dir\window\login
 
 
 # =============================================================================
@@ -99,9 +129,9 @@ build CMakeFiles/raylib_project.dir/functions/functions.c.obj: C_COMPILER__rayli
 #############################################
 # Link the executable raylib_project.exe
 
-build raylib_project.exe: C_EXECUTABLE_LINKER__raylib_project_Debug CMakeFiles/raylib_project.dir/main.c.obj CMakeFiles/raylib_project.dir/components/button/button.c.obj CMakeFiles/raylib_project.dir/components/grid/grid.c.obj CMakeFiles/raylib_project.dir/components/input/input.c.obj CMakeFiles/raylib_project.dir/window/login/login.c.obj CMakeFiles/raylib_project.dir/constants/constants.c.obj CMakeFiles/raylib_project.dir/functions/functions.c.obj
+build raylib_project.exe: C_EXECUTABLE_LINKER__raylib_project_Debug CMakeFiles/raylib_project.dir/main.c.obj CMakeFiles/raylib_project.dir/constants/constants.c.obj CMakeFiles/raylib_project.dir/components/button/button.c.obj CMakeFiles/raylib_project.dir/components/container/container.c.obj CMakeFiles/raylib_project.dir/components/grid/grid.c.obj CMakeFiles/raylib_project.dir/components/input/input.c.obj CMakeFiles/raylib_project.dir/components/text/text.c.obj CMakeFiles/raylib_project.dir/game/background.c.obj CMakeFiles/raylib_project.dir/game/questions.c.obj CMakeFiles/raylib_project.dir/game/readfile.c.obj CMakeFiles/raylib_project.dir/functions/functions.c.obj CMakeFiles/raylib_project.dir/window/login/login.c.obj | D$:/Programs/msys64/mingw64/lib/libcjson_utils.dll.a D$:/Programs/msys64/mingw64/lib/libcjson.dll.a
   FLAGS = -g
-  LINK_LIBRARIES = -lraylib  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  LINK_LIBRARIES = -lraylib  D:/Programs/msys64/mingw64/lib/libcjson_utils.dll.a  D:/Programs/msys64/mingw64/lib/libcjson.dll.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\raylib_project.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
@@ -154,14 +184,14 @@ build all: phony raylib_project.exe
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | CMakeCache.txt CMakeFiles/3.27.8/CMakeCCompiler.cmake CMakeFiles/3.27.8/CMakeRCCompiler.cmake CMakeFiles/3.27.8/CMakeSystem.cmake D$:/Programs/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeCInformation.cmake D$:/Programs/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeCommonLanguageInclude.cmake D$:/Programs/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeGenericSystem.cmake D$:/Programs/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeInitializeConfigs.cmake D$:/Programs/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeLanguageInformation.cmake D$:/Programs/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeRCInformation.cmake D$:/Programs/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeSystemSpecificInformation.cmake D$:/Programs/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeSystemSpecificInitialize.cmake D$:/Programs/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/CMakeCommonCompilerMacros.cmake D$:/Programs/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/GNU-C.cmake D$:/Programs/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/GNU.cmake D$:/Programs/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/FindPackageHandleStandardArgs.cmake D$:/Programs/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/FindPackageMessage.cmake D$:/Programs/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/FindPkgConfig.cmake D$:/Programs/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU-C-ABI.cmake D$:/Programs/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU-C.cmake D$:/Programs/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU.cmake D$:/Programs/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-Initialize.cmake D$:/Programs/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-windres.cmake D$:/Programs/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows.cmake D$:/Programs/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/WindowsPaths.cmake D$:/code/Repositories/raylib_project/CMakeLists.txt
+build build.ninja: RERUN_CMAKE | CMakeCache.txt CMakeFiles/3.27.8/CMakeCCompiler.cmake CMakeFiles/3.27.8/CMakeRCCompiler.cmake CMakeFiles/3.27.8/CMakeSystem.cmake D$:/Programs/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeCInformation.cmake D$:/Programs/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeCommonLanguageInclude.cmake D$:/Programs/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeGenericSystem.cmake D$:/Programs/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeInitializeConfigs.cmake D$:/Programs/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeLanguageInformation.cmake D$:/Programs/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeRCInformation.cmake D$:/Programs/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeSystemSpecificInformation.cmake D$:/Programs/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeSystemSpecificInitialize.cmake D$:/Programs/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/CMakeCommonCompilerMacros.cmake D$:/Programs/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/GNU-C.cmake D$:/Programs/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/GNU.cmake D$:/Programs/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/FindPackageHandleStandardArgs.cmake D$:/Programs/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/FindPackageMessage.cmake D$:/Programs/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/FindPkgConfig.cmake D$:/Programs/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU-C-ABI.cmake D$:/Programs/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU-C.cmake D$:/Programs/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU.cmake D$:/Programs/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-Initialize.cmake D$:/Programs/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-windres.cmake D$:/Programs/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows.cmake D$:/Programs/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/WindowsPaths.cmake D$:/Programs/msys64/mingw64/lib/cmake/cJSON/cJSONConfig.cmake D$:/Programs/msys64/mingw64/lib/cmake/cJSON/cJSONConfigVersion.cmake D$:/Programs/msys64/mingw64/lib/cmake/cJSON/cjson-release.cmake D$:/Programs/msys64/mingw64/lib/cmake/cJSON/cjson.cmake D$:/Programs/msys64/mingw64/lib/cmake/cJSON/cjson_utils-release.cmake D$:/Programs/msys64/mingw64/lib/cmake/cJSON/cjson_utils.cmake D$:/code/Repositories/raylib_project/CMakeLists.txt
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build CMakeCache.txt CMakeFiles/3.27.8/CMakeCCompiler.cmake CMakeFiles/3.27.8/CMakeRCCompiler.cmake CMakeFiles/3.27.8/CMakeSystem.cmake D$:/Programs/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeCInformation.cmake D$:/Programs/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeCommonLanguageInclude.cmake D$:/Programs/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeGenericSystem.cmake D$:/Programs/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeInitializeConfigs.cmake D$:/Programs/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeLanguageInformation.cmake D$:/Programs/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeRCInformation.cmake D$:/Programs/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeSystemSpecificInformation.cmake D$:/Programs/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeSystemSpecificInitialize.cmake D$:/Programs/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/CMakeCommonCompilerMacros.cmake D$:/Programs/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/GNU-C.cmake D$:/Programs/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/GNU.cmake D$:/Programs/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/FindPackageHandleStandardArgs.cmake D$:/Programs/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/FindPackageMessage.cmake D$:/Programs/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/FindPkgConfig.cmake D$:/Programs/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU-C-ABI.cmake D$:/Programs/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU-C.cmake D$:/Programs/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU.cmake D$:/Programs/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-Initialize.cmake D$:/Programs/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-windres.cmake D$:/Programs/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows.cmake D$:/Programs/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/WindowsPaths.cmake D$:/code/Repositories/raylib_project/CMakeLists.txt: phony
+build CMakeCache.txt CMakeFiles/3.27.8/CMakeCCompiler.cmake CMakeFiles/3.27.8/CMakeRCCompiler.cmake CMakeFiles/3.27.8/CMakeSystem.cmake D$:/Programs/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeCInformation.cmake D$:/Programs/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeCommonLanguageInclude.cmake D$:/Programs/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeGenericSystem.cmake D$:/Programs/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeInitializeConfigs.cmake D$:/Programs/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeLanguageInformation.cmake D$:/Programs/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeRCInformation.cmake D$:/Programs/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeSystemSpecificInformation.cmake D$:/Programs/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeSystemSpecificInitialize.cmake D$:/Programs/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/CMakeCommonCompilerMacros.cmake D$:/Programs/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/GNU-C.cmake D$:/Programs/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/GNU.cmake D$:/Programs/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/FindPackageHandleStandardArgs.cmake D$:/Programs/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/FindPackageMessage.cmake D$:/Programs/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/FindPkgConfig.cmake D$:/Programs/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU-C-ABI.cmake D$:/Programs/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU-C.cmake D$:/Programs/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU.cmake D$:/Programs/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-Initialize.cmake D$:/Programs/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-windres.cmake D$:/Programs/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows.cmake D$:/Programs/CLion$ 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/WindowsPaths.cmake D$:/Programs/msys64/mingw64/lib/cmake/cJSON/cJSONConfig.cmake D$:/Programs/msys64/mingw64/lib/cmake/cJSON/cJSONConfigVersion.cmake D$:/Programs/msys64/mingw64/lib/cmake/cJSON/cjson-release.cmake D$:/Programs/msys64/mingw64/lib/cmake/cJSON/cjson.cmake D$:/Programs/msys64/mingw64/lib/cmake/cJSON/cjson_utils-release.cmake D$:/Programs/msys64/mingw64/lib/cmake/cJSON/cjson_utils.cmake D$:/code/Repositories/raylib_project/CMakeLists.txt: phony
 
 
 #############################################
