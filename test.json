@@ -8,7 +8,7 @@
                 "C": "Áp giải",
                 "D": "Áp lực"
             },
-            "correct_answer": "D"
+            "correctAnswer": "D"
         },
         "2": {
             "content": "Cocktail là gì?",
@@ -18,7 +18,7 @@
                 "C": "1 bộ phận cơ thể",
                 "D": "1 loài động vật"
             },
-            "correct_answer": "B"
+            "correctAnswer": "B"
         },
         "3": {
             "content": "Môn võ nào sau đây có nguồn gốc từ Việt Nam",
@@ -28,7 +28,7 @@
                 "C": "Judo",
                 "D": "Aikido"
             },
-            "correct_answer": "A"
+            "correctAnswer": "A"
         },
         "4": {
             "content": "Câu thành ngữ nào dùng để nói về những người lười biếng, không chịu làm ăn",
@@ -38,7 +38,7 @@
                 "C": "Ăn cháo đá bát",
                 "D": "Ăn chắc mặc bền"
             },
-            "correct_answer": "B"
+            "correctAnswer": "B"
         },
         "5": {
             "content": "Trần Quốc Toản đã tức giận bóp nát quả gì khi không được tham gia hội nghị Bình Than?",
@@ -48,7 +48,7 @@
                 "C": "Quả cam",
                 "D": "Quả táo"
             },
-            "correct_answer": "C"
+            "correctAnswer": "C"
         },
         "6": {
             "content": "Đâu là tên một loại dép?",
@@ -58,7 +58,7 @@
                 "C": "Tổ kiến",
                 "D": "Tổ chim"
             },
-            "correct_answer": "B"
+            "correctAnswer": "B"
         },
         "7": {
             "content": "Câu nào sau đây có ý nói về việc làm thừa thãi không cần thiết?",
@@ -68,7 +68,7 @@
                 "C": "Dạy khỉ trèo cây",
                 "D": "Góp gió thành bão"
             },
-            "correct_answer": "C"
+            "correctAnswer": "C"
         },
         "8": {
             "content": "Trong truyện ngụ ngôn 'Trí khôn của ta đây', con vật nào gẫy hết răng vì cười",
@@ -78,7 +78,7 @@
                 "C": "Trâu",
                 "D": "Gà"
             },
-            "correct_answer": "C"
+            "correctAnswer": "C"
         },
         "9": {
             "content": "Trong những câu thơ của nhà thơ Nguyễn Nhược Pháp 'Cùng thầy me em dậy. Em vấn đầu soi gương', cô gái sửa soạn để đi đâu?",
@@ -88,7 +88,7 @@
                 "C": "Chùa Phật Tích",
                 "D": "Chùa Thiên Mụ"
             },
-            "correct_answer": "B"
+            "correctAnswer": "B"
         },
         "10": {
             "content": "Gạo ST25 là loại đặc sản có nguồn gốc từ tỉnh thành nào?",
@@ -98,7 +98,7 @@
                 "C": "Sóc Trăng",
                 "D": "Vĩnh Long"
             },
-            "correct_answer": "C"
+            "correctAnswer": "C"
         },
         "11": {
             "content": "Ở phương Tây, ai là người phân phát quà cho trẻ em qua ống khói?",
@@ -108,7 +108,7 @@
                 "C": "Công chúa Tuyết",
                 "D": "Con tuần lộc"
             },
-            "correct_answer": "B"
+            "correctAnswer": "B"
         },
         "12": {
             "content": "Cụm từ nào dưới đây có nghĩa là 'Chúc mừng năm mới'?",
@@ -118,7 +118,7 @@
                 "C": "Happy year",
                 "D": "Happy new year"
             },
-            "correct_answer": "D"
+            "correctAnswer": "D"
         },
         "13": {
             "content": "Thằng Bờm đồng ý đổi quạt mo cho phú ông lấy cái gì?",
@@ -128,7 +128,7 @@
                 "C": "Ao sâu cá mè",
                 "D": "Nắm xôi"
             },
-            "correct_answer": "D"
+            "correctAnswer": "D"
         },
         "14": {
             "content": "Món Cà-ri thường có màu gì?",
@@ -138,7 +138,7 @@
                 "C": "Vàng",
                 "D": "Hồng nhạt"
             },
-            "correct_answer": "C"
+            "correctAnswer": "C"
         },
         "15": {
             "content": "Môn khoa học nào liên quan đến động thực vật?",
@@ -148,7 +148,7 @@
                 "C": "Vật lý học",
                 "D": "Thiên văn học"
             },
-            "correct_answer": "A"
+            "correctAnswer": "A"
         },
         "16": {
             "content": "Con vật nào là một trong những nhân vật chính trong tác phẩm 'Tây Du Ký' của tác giả Ngô Thừa Ân",
@@ -158,7 +158,7 @@
                 "C": "Gà",
                 "D": "Mèo"
             },
-            "correct_answer": "B"
+            "correctAnswer": "B"
         },
         "17": {
             "content": "",
@@ -168,7 +168,7 @@
                 "C": "",
                 "D": ""
             },
-            "correct_answer": "A"
+            "correctAnswer": "A"
         },
         "18": {
             "content": "'Quỷ đỏ' là biệt danh của câu lạc bộ bóng đá nào của Anh",
@@ -178,7 +178,7 @@
                 "C": "Arsenal",
                 "D": "Southampton"
             },
-            "correct_answer": "A"
+            "correctAnswer": "A"
         },
         "19": {
             "content": "Một câu chuyện cổ tích thường bắt đầu bằng từ gì?",
@@ -188,7 +188,7 @@
                 "C": "Lâu lắm rồi",
                 "D": "Ngày xửa, này xưa"
             },
-            "correct_answer": "D"
+            "correctAnswer": "D"
         },
         "20": {
             "content": "Từ nào sau đây chỉ tên của một loại trái cây?",
@@ -198,7 +198,7 @@
                 "C": "Nhái bén",
                 "D": "Mòng"
             },
-            "correct_answer": "B"
+            "correctAnswer": "B"
         },
         "21": {
             "content": "Đâu là tên của một tập truyện nổi tiếng?",
@@ -208,7 +208,7 @@
                 "C": "Nghìn lẻ một tuần",
                 "D": "Nghìn lẻ một đêm"
             },
-            "correct_answer": "D"
+            "correctAnswer": "D"
         },
         "22": {
             "content": "Trong bẳng tuần hoàn Mendeleev, nguyên tố hóa học Poloni được viết như thế nào?",
@@ -218,7 +218,7 @@
                 "C": "Ba",
                 "D": "Po"
             },
-            "correct_answer": "D"
+            "correctAnswer": "D"
         },
         "23": {
             "content": "Theo truyền thuyết, người mẹ ướm chân vào vết chân to trên ruộng và đã sinh ra ai?",
@@ -228,7 +228,7 @@
                 "C": "Mị Nương",
                 "D": "Thánh Gióng"
             },
-            "correct_answer": "D"
+            "correctAnswer": "D"
         },
         "24": {
             "content": "Công dân Việt Nam đủ bao nhiêu tuổi sẽ được gọi nhập ngũ?",
@@ -238,7 +238,7 @@
                 "C": "20",
                 "D": "22"
             },
-            "correct_answer": "B"
+            "correctAnswer": "B"
         },
         "25": {
             "content": "'Richter' là thang đo để xác định sức tàn phá của hiện tượng nào?",
@@ -248,7 +248,7 @@
                 "C": "Động đất",
                 "D": "Sét"
             },
-            "correct_answer": "C"
+            "correctAnswer": "C"
         }
     },
     "6-10": {
@@ -260,7 +260,7 @@
                 "C": "Chế Lan Viên",
                 "D": "Thâm Tâm"
             },
-            "correct_answer": "B"
+            "correctAnswer": "B"
         },
         "2": {
             "content": "Ca khúc 'Mùa xuân trên thành phố Hồ Chí Minh' được bắt đầu bằng từ nào?",
@@ -270,7 +270,7 @@
                 "C": "Mùa xuân",
                 "D": "Quê hương"
             },
-            "correct_answer": "C"
+            "correctAnswer": "C"
         },
         "3": {
             "content": "Theo một câu ca dân gian thì trăng mùng một có hình gì?",
@@ -280,7 +280,7 @@
                 "C": "Lưỡi rắn",
                 "D": "Lưỡi tê giác"
             },
-            "correct_answer": "A"
+            "correctAnswer": "A"
         },
         "4": {
             "content": "Modem là thiết bị dùng để làm gì",
@@ -290,7 +290,7 @@
                 "C": "Kết nối hai máy tính",
                 "D": "Lọc thư rác"
             },
-            "correct_answer": "C"
+            "correctAnswer": "C"
         },
         "5": {
             "content": "Tổng thư ký Liên Hợp Quốc Kofi Annan là người nước nào?",
@@ -300,7 +300,7 @@
                 "C": "Ả Rập",
                 "D": "Nigeria"
             },
-            "correct_answer": "B"
+            "correctAnswer": "B"
         },
         "6": {
             "content": "Tuyến đường sắt nào được xây dựng đầu tiên ở nước ta?",
@@ -310,7 +310,7 @@
                 "C": "Hà Nội - Lạng Sơn",
                 "D": "Sài Gòn - Mỹ Tho"
             },
-            "correct_answer": "D"
+            "correctAnswer": "D"
         },
         "7": {
             "content": "Món đặc sản nổi tiếng của người Mường ở huyện Thanh Sơn (Phú Thọ) có tên gọi là gì?",
@@ -320,7 +320,7 @@
                 "C": "Thịt chua",
                 "D": "Thịt giằng"
             },
-            "correct_answer": "C"
+            "correctAnswer": "C"
         },
         "8": {
             "content": "Lục địa nào là quê hương của những câu chuyện ngụ ngôn Timbuktu?",
@@ -330,7 +330,7 @@
                 "C": "Châu Á",
                 "D": "Châu Đại Dương"
             },
-            "correct_answer": "B"
+            "correctAnswer": "B"
         },
         "9": {
             "content": "Năm nhuận 2023 có hai tháng âm lịch nào sau đây?",
@@ -340,7 +340,7 @@
                 "C": "Tháng tư",
                 "D": "Tháng chạp"
             },
-            "correct_answer": "A"
+            "correctAnswer": "A"
         },
         "10": {
             "content": "Thành phố nào trên thế giới được mệnh danh là 'Thành phố trắng của phương Bắc'?",
@@ -350,7 +350,7 @@
                 "C": "Conenhagen",
                 "D": "Stockholm"
             },
-            "correct_answer": "B"
+            "correctAnswer": "B"
         },
         "11": {
             "content": "Phòng tuyến sông Như Nguyệt và bài thơ 'Nam quốc sơn hà' gắn liền với tên tuổi của vị danh tướng nào?",
@@ -360,7 +360,7 @@
                 "C": "Trần Hưng Đạo",
                 "D": "Quang Trung"
             },
-            "correct_answer": "B"
+            "correctAnswer": "B"
         },
         "12": {
             "content": "Linh vật của World Cup nữ 2023 mang hình tượng con vật gì?",
@@ -370,7 +370,7 @@
                 "C": "Chim cánh cụt",
                 "D": "Gấu túi"
             },
-            "correct_answer": "C"
+            "correctAnswer": "C"
         },
         "13": {
             "content": "Tính đến hết năm 2022, tác phẩm nghệ thuật đắt giá nhất thể kỷ 20 trong lịch sử đấu giá công khai là bức tranh chân dung của ngôi sao giải trí nào?",
@@ -380,7 +380,7 @@
                 "C": "Charlie Chaplin",
                 "D": "Marilyn Monroe"
             },
-            "correct_answer": "D"
+            "correctAnswer": "D"
         },
         "14": {
             "content": "Bánh chưng đen là món ăn truyền thống nổi tiếng nhất của dân tộc nào ở Việt Nam?",
@@ -390,119 +390,119 @@
                 "C": "Tày",
                 "D": "Mường"
             },
-            "correct_answer": "C"
+            "correctAnswer": "C"
         },
         "15": {
-            "content": "'Quả cầu pha lê' là giải thưởng lớn cảu Liên hoan phim quốc tế nào?",
+            "content": "'Quả cầu pha lê' là giải thưởng lớn của Liên hoan phim quốc tế nào?",
             "answers": {
                 "A": "Liên hoan phim Tokyo",
                 "B": "Liên hoan phim Cairo",
                 "C": "Liên hoan phim Karlovy Vary",
                 "D": "Liên hoan phim Moskva"
             },
-            "correct_answer": "C"
+            "correctAnswer": "C"
         }
     },
     "11-15": {
         "1": {
-            "content": "T",
+            "content": "Đảo Ti-tốp trên vịnh Hạ Long được đặt theo tên ai?",
             "answers": {
-                "A": "",
-                "B": "",
-                "C": "",
-                "D": ""
+                "A": "Một họa sĩ",
+                "B": "Một nghệ sĩ",
+                "C": "Một phi hành gia",
+                "D": "Một triết gia"
             },
-            "correct_answer": "A"
+            "correctAnswer": "C"
         },
         "2": {
-            "content": "",
+            "content": "Chiếc máy bay chiến đấu mang số hiệu 4324, được sông nhận là bảo vật quốc gia ngày 14/01/2015, thuộc dong máy bay nào?",
             "answers": {
-                "A": "",
-                "B": "",
-                "C": "",
-                "D": ""
+                "A": "An-2",
+                "B": "Su-22",
+                "C": "Yak-52",
+                "D": "MiG-21"
             },
-            "correct_answer": "A"
+            "correctAnswer": "D"
         },
         "3": {
-            "content": "",
+            "content": "Bức ảnh về nụ hôn chiến thắng ở quảng trường Thời Đại của tác giả Alfred Eisenstadt được chụp trong khoảnh khắc ăn mừng sự kiện nào",
             "answers": {
-                "A": "",
-                "B": "",
-                "C": "",
-                "D": ""
+                "A": "Chấm dứt khủng hoảng kinh tế 1929-1933",
+                "B": "Kết thúc Thế chiến I",
+                "C": "Kết thúc Thế chiến II",
+                "D": "100 năm thành lập nước Mỹ"
             },
-            "correct_answer": "A"
+            "correctAnswer": "C"
         },
         "4": {
-            "content": "",
+            "content": "Loài động vật nào ở nước ta còn được đồng bào dân tộc Rắc Lây gọi là 'min'?",
             "answers": {
-                "A": "",
-                "B": "",
-                "C": "",
-                "D": ""
+                "A": "Sếu đầu đỏ",
+                "B": "Bò tót",
+                "C": "Sao la",
+                "D": "Tắc kè bông"
             },
-            "correct_answer": "A"
+            "correctAnswer": "B"
         },
         "5": {
-            "content": "",
+            "content": "Đài thiên văn ALMA được đặt tại quốc gia Nam Mỹ nào?",
             "answers": {
-                "A": "",
-                "B": "",
-                "C": "",
-                "D": ""
+                "A": "Brazil",
+                "B": "Uruguay",
+                "C": "Argentina",
+                "D": "Chile"
             },
-            "correct_answer": "A"
+            "correctAnswer": "D"
         },
         "6": {
-            "content": "",
+            "content": "Sazae-san là bộ phim dài nhất thế giới ở thể loại nào?",
             "answers": {
-                "A": "",
-                "B": "",
-                "C": "",
-                "D": ""
+                "A": "Hoạt hình",
+                "B": "Trinh thám",
+                "C": "Hành động",
+                "D": "Kinh dị"
             },
-            "correct_answer": "A"
+            "correctAnswer": "A"
         },
         "7": {
-            "content": "",
+            "content": "Cựu phi hành gia nào là người duy nhất vừa bay vào vũ trụ vừa lặn xuống điểm sâu nhất đại dương thuộc rãnh Mariana?",
             "answers": {
-                "A": "",
-                "B": "",
-                "C": "",
-                "D": ""
+                "A": "Bob Behnken",
+                "B": "Kate Rubins",
+                "C": "Kathy Sullivan",
+                "D": "Doug Hurley"
             },
-            "correct_answer": "A"
+            "correctAnswer": "C"
         },
         "8": {
-            "content": "",
+            "content": "Ngày 10/3 âm hàng năm được chính thức quy định là ngày Giỗ tổ Hùng Vương vào triều đại nào trong lịch sử nước ta?",
             "answers": {
-                "A": "",
-                "B": "",
-                "C": "",
-                "D": ""
+                "A": "Nhà Lý",
+                "B": "Nhà Hậu Lê",
+                "C": "Nhà Nguyễn",
+                "D": "Nhà Trần"
             },
-            "correct_answer": "A"
+            "correctAnswer": "C"
         },
         "9": {
-            "content": "",
+            "content": "Thủ đô của quốc gia nào sau đây hiện không có đèn giao thông?",
             "answers": {
-                "A": "",
-                "B": "",
-                "C": "",
-                "D": ""
+                "A": "Brunei",
+                "B": "Nigeria",
+                "C": "Bhutan",
+                "D": "Bolivia"
             },
-            "correct_answer": "A"
+            "correctAnswer": "C"
         },
         "10": {
-            "content": "",
+            "content": "Những câu thơ 'Trường Sơn chí lớn ông cha/ Cửu Long lòng mẹ bao la sóng trào' nằm trong tác phẩm của nhà thơ Lê Anh Xuân?",
             "answers": {
-                "A": "",
-                "B": "",
-                "C": "",
-                "D": ""
+                "A": "Dáng đứng Việt Nam",
+                "B": "Nguyễn Văn Trỗi",
+                "C": "Gửi miền Bắc",
+                "D": "Hành quân giữa rừng xuân"
             },
-            "correct_answer": "A"
+            "correctAnswer": "B"
         }
     }
 }
