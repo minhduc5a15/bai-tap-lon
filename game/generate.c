@@ -1,5 +1,7 @@
 #include "game.h"
 
+static int getRandomQuestion(int begin, int end);
+
 int *generateQuestions(unsigned int lower_bound, unsigned int upper_bound) {
     int size = 5, current_size = 0;
     bool *visited = (bool *) calloc(upper_bound + 1, sizeof(false));
@@ -12,4 +14,8 @@ int *generateQuestions(unsigned int lower_bound, unsigned int upper_bound) {
         }
     }
     return result;
+}
+
+static int getRandomQuestion(int begin, int end) {
+    return rand() % (end - begin + 1) + begin;
 }

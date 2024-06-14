@@ -40,9 +40,11 @@ extern const int SCREEN_WIDTH; /* px */
 extern const int SCREEN_HEIGHT; /* px */
 extern const int FPS; /* Frames per second */
 extern const int INPUT_PADDING_LEFT; /*px */
+extern const int SPACING; /*px */
 extern const char *BACKGROUND_IMAGE_DIR; /* Đường dẫn tới background */
 extern const char *QUESTION_IMAGE_DIR; /* Đường dẫn tới background của câu hỏi */
 extern const char *DEFAULT_FONT_DIR;
+extern const Color TEXT_COLOR;
 extern const char *START_BUTTON_DIR;
 extern const char *TITLE_WINDOW_LOGIN;
 extern const char *TITLE_WINDOW_GAME;

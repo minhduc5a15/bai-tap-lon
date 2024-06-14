@@ -25,7 +25,10 @@ struct Container {
 typedef struct Container Container;
 
 // Hàm khởi tạo cho container đồng thời Unload img
-void ContainerInit(Container *container, Image img, Rectangle destRect, V2 position);
+void containerInit(Container *container, Image img, Rectangle destRect, V2 position);
+
+// Hàm tạo một container mới
+Container newContainer(Image img, Rectangle destRect, V2 position);
 
 // Hàm vẽ container
 void DrawContainer(Container container, float rotation, Color color);

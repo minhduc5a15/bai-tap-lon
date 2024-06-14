@@ -1,9 +1,15 @@
 #include "container.h"
 
-__attribute__((unused)) void ContainerInit(Container *container, Image img, Rectangle destRect, V2 position) {
+__attribute__((unused)) void containerInit(Container *container, Image img, Rectangle destRect, V2 position) {
     *container = (Container) {img, LoadTextureFromImage(img), (Rectangle) {0, 0, img.width, img.height}, destRect, position, nullptr};
-//    UnloadTexture(container->texture);
     UnloadImage(container->img); // xử lý unload img
+}
+
+Container newContainer(Image img, Rectangle destRect, V2 position) {
+    Container container;
+    container = (Container) {img, LoadTextureFromImage(img), (Rectangle) {0, 0, img.width, img.height}, destRect, position, nullptr};
+    UnloadImage(container.img);
+    return container;
 }
 
 __attribute__((unused)) void DrawContainer(Container container, float rotation, Color color) {
@@ -14,7 +20,7 @@ __attribute__((unused)) void DrawContainer(Container container, float rotation, 
     float textX = container.destRect.x + container.destRect.width / 2 - textSize.x / 2;
     float textY = container.destRect.y + container.destRect.height / 2 - textSize.y / 2;
 
-    DrawTextEx(container.value.font, container.value.value, (V2){textX, textY}, 100, 1, container.value.color);
+    DrawTextEx(container.value.font, container.value.value, (V2) {textX, textY}, 100, 1, container.value.color);
 }
 
 __attribute__((unused)) void onClickContainer(Container container, Callback callback) {

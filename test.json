@@ -161,14 +161,14 @@
             "correctAnswer": "B"
         },
         "17": {
-            "content": "",
+            "content": "'Một tôm, hai lá' là một nguyên tắc trong thu hoạch loại nông sản nào?",
             "answers": {
-                "A": "",
-                "B": "",
-                "C": "",
-                "D": ""
+                "A": "Cà phê",
+                "B": "Chè",
+                "C": "Cao su",
+                "D": "Điều"
             },
-            "correctAnswer": "A"
+            "correctAnswer": "B"
         },
         "18": {
             "content": "'Quỷ đỏ' là biệt danh của câu lạc bộ bóng đá nào của Anh",
@@ -503,6 +503,16 @@
                 "D": "Hành quân giữa rừng xuân"
             },
             "correctAnswer": "B"
+        },
+        "11": {
+            "content": "Bác Hồ đã trồng cây tại địa điểm nao ngày nay ở Hà Nội để mở đầu phong trào 'Tết trồng cây'",
+            "answers": {
+                "A": "Vườn Phủ Chủ tịch",
+                "B": "Công viên Bách Thảo",
+                "C": "Hồ Gươm",
+                "D": "Công viên thống nhất"
+            },
+            "correctAnswer": "D"
         }
     }
 }

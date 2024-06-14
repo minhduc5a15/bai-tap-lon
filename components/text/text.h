@@ -17,6 +17,8 @@ typedef struct UnicodeText UnicodeText;
 
 void UnicodeTextInit(UnicodeText *unicodeText, const char *fontDirectory, char *value);
 
-void DrawUnicodeText(UnicodeText unicodeText, Vector2 postion, float fontSize, float spacing, Color color);
+UnicodeText newUnicodeText(const char *fontDirectory, char *value);
+
+void DrawUnicodeText(UnicodeText unicodeText, Vector2 position, float fontSize, float spacing, Color color);
 
 #endif

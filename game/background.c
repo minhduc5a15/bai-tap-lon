@@ -6,7 +6,7 @@ void backgroundImageInit(void) {
     Image bgImage = LoadImage(BACKGROUND_IMAGE_DIR);
     Rectangle destRect = {0, 0, SCREEN_WIDTH, SCREEN_HEIGHT};
     V2 origin = {0, 0};
-    ContainerInit(&bgContainer, bgImage, destRect, origin);
+    containerInit(&bgContainer, bgImage, destRect, origin);
 }
 
 void setBackgroundImage(void) {
