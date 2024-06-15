@@ -65,13 +65,13 @@ void DrawInput(Input input) {
     if (input.isMouseEnter) DrawRectangleLines(input.x, input.y, input.width, input.height, GRAY);
     else DrawRectangleLines(input.x, input.y, input.width, input.height, BLACK);
 
-//    DrawText(input.currentLength > 0 ? input.value : input.placeHolder, input.x + 5, SCREEN_HEIGHT / 2 - input.y / 2 - input.fontSize, input.fontSize, MAROON);
-//    DrawText(input.currentLength > 0 ? input.value : input.placeHolder, SCREEN_WIDTH / 2 - input.width / 2 + 5, SCREEN_HEIGHT / 2 - input.height / 2 + input.fontSize / 2, input.fontSize, GRAY);
+//    DrawText(input.currentLength > 0 ? input.text : input.placeHolder, input.x + 5, SCREEN_HEIGHT / 2 - input.y / 2 - input.fontSize, input.fontSize, MAROON);
+//    DrawText(input.currentLength > 0 ? input.text : input.placeHolder, SCREEN_WIDTH / 2 - input.width / 2 + 5, SCREEN_HEIGHT / 2 - input.height / 2 + input.fontSize / 2, input.fontSize, GRAY);
     DrawTextEx(input.font, input.currentLength > 0 ? input.value : input.placeHolder, (Vector2) {SCREEN_WIDTH / 2 - input.width / 2 + 5, SCREEN_HEIGHT / 2 - input.height / 2 + input.fontSize / 2}, input.fontSize, 1, GRAY);
     if (input.isMouseEnter) {
 //        if (input.currentLength < input.maxLength) {
-//            printf("%d %d\n", max(MeasureText(input.value, input.fontSize), 0), input.currentLength);
-        DrawText("|", SCREEN_WIDTH / 2 - input.width / 2 + MeasureTextEx(input.font, input.value, input.fontSize, 1).x + INPUT_PADDING_LEFT, SCREEN_HEIGHT / 2 - input.height / 2 + input.fontSize / 2, 25, BLACK);
+//            printf("%d %d\n", max(MeasureText(input.text, input.fontSize), 0), input.currentLength);
+        DrawText("|", SCREEN_WIDTH / 2 - input.width / 2 + MeasureTextEx(input.font, input.value, input.fontSize, 1).x + PADDING_LEFT, SCREEN_HEIGHT / 2 - input.height / 2 + input.fontSize / 2, 25, BLACK);
 //        }
     }
 }

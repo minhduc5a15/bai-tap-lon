@@ -1,3 +1,9 @@
 #include "common.h"
 
-int window() {}
+int window() {
+    setBackgroundImage();
+    drawQuestion();
+    drawAnswers();
+    onEvents();
+    return 0;
+}

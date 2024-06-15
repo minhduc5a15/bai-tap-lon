@@ -6,10 +6,9 @@
 struct UnicodeText {
     Font font;
     char *fontDirectory;
-    char *value;
+    char *text;
     int codepointCount;
     int *codepoints;
-    int *codepointsNoDups;
     int codepointsNoDupsCount;
 };
 

@@ -23,7 +23,6 @@ void readQuestions(cJSON *json_array, Question **questions, int *questions_count
     int count = cJSON_GetArraySize(json_array);
     *questions = (Question *) malloc(count * sizeof(Question));
     *questions_count = count;
-    printf("count = %d\n", count);
     for (int i = 0; i < count; ++i) {
         cJSON *json_question = cJSON_GetArrayItem(json_array, i);
         cJSON *content = cJSON_GetObjectItemCaseSensitive(json_question, "content");
@@ -31,10 +30,14 @@ void readQuestions(cJSON *json_array, Question **questions, int *questions_count
         cJSON *correct_answer = cJSON_GetObjectItemCaseSensitive(json_question, "correctAnswer");
 
         (*questions)[i].content = content ? strdup(content->valuestring) : nullptr;
-        (*questions)[i].answers[0].value.value = answers ? strdup(cJSON_GetObjectItemCaseSensitive(answers, "A")->valuestring) : nullptr;
-        (*questions)[i].answers[1].value.value = answers ? strdup(cJSON_GetObjectItemCaseSensitive(answers, "B")->valuestring) : nullptr;
-        (*questions)[i].answers[2].value.value = answers ? strdup(cJSON_GetObjectItemCaseSensitive(answers, "C")->valuestring) : nullptr;
-        (*questions)[i].answers[3].value.value = answers ? strdup(cJSON_GetObjectItemCaseSensitive(answers, "D")->valuestring) : nullptr;
+        (*questions)[i].answers[0].answer = strdup("A");
+        (*questions)[i].answers[1].answer = strdup("B");
+        (*questions)[i].answers[2].answer = strdup("C");
+        (*questions)[i].answers[3].answer = strdup("D");
+        (*questions)[i].answers[0].value.text = answers ? strdup(cJSON_GetObjectItemCaseSensitive(answers, "A")->valuestring) : nullptr;
+        (*questions)[i].answers[1].value.text = answers ? strdup(cJSON_GetObjectItemCaseSensitive(answers, "B")->valuestring) : nullptr;
+        (*questions)[i].answers[2].value.text = answers ? strdup(cJSON_GetObjectItemCaseSensitive(answers, "C")->valuestring) : nullptr;
+        (*questions)[i].answers[3].value.text = answers ? strdup(cJSON_GetObjectItemCaseSensitive(answers, "D")->valuestring) : nullptr;
         (*questions)[i].correctAnswer = correct_answer ? strdup(correct_answer->valuestring) : "\0";
     }
 }

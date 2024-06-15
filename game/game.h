@@ -2,7 +2,25 @@
 #define GAME_H
 
 #include "../common.h"
+// -------------------Global Variables --------------------------------
 
+extern int currLevel;
+extern bool running;
+extern Container *currentClickContainer;
+
+void setRunning();
+
+bool getRunning();
+
+void *setCurrentClickContainer(void *container);
+
+void *getCurrentClickContainer();
+
+void setCurrLevel(int value);
+
+int getCurrLevel();
+
+// ----------------------------------------------------------------
 struct Answer {
     char *answer; // A, B, C or D
     UnicodeText value;
@@ -18,20 +36,19 @@ struct Question {
 typedef struct Question Question;
 
 struct AnsContainer {
-    Container container;
     Answer answer;
+    Container container;
 };
 typedef struct AnsContainer AnsContainer;
 
 // ------------------------background------------------------
 extern Container bgContainer;
 // ------------------------------------------------
-
+extern bool check;
 #ifndef WINDOW_QUESTION_H
 extern UnicodeText questionContent;
 extern Container questionContainer;
 extern Container currQuest;
-extern int currIndex;
 
 extern void getCurrentQuest(int level);
 
@@ -53,12 +70,15 @@ extern void createDatabase();
 #endif // WINDOW_DATA_H
 
 #ifndef WINDOW_ANSWERS_H
-extern AnsContainer AnsContainerA;
-extern AnsContainer AnsContainerB;
-extern AnsContainer AnsContainerC;
-extern AnsContainer AnsContainerD;
+extern AnsContainer ansContainerA;
+extern AnsContainer ansContainerB;
+extern AnsContainer ansContainerC;
+extern AnsContainer ansContainerD;
 
-void setAnswers();
+extern void setAnswers(int level);
+
+extern void drawAnswers();
+
 #endif // WINDOW_ANSWERS_H
 struct Window {
     int level;
@@ -91,6 +111,13 @@ void saveData(Question **db, int *length, char *range);
 // ----------------------Generate Question----------------------
 
 int *generateQuestions(unsigned int lower_bound, unsigned int upper_bound);
+// ----------------------Events----------------------
+
+extern bool isHovering;
+extern Container *currentHoverContainer;
+
+void onEvents();
+
 
 #ifdef __cplusplus
 }
