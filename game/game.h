@@ -7,8 +7,9 @@
 extern int currLevel;
 extern bool running;
 extern Container *currentClickContainer;
+extern char *currAnswer;
 
-void setRunning();
+void setRunning(bool value);
 
 bool getRunning();
 
@@ -20,7 +21,12 @@ void setCurrLevel(int value);
 
 int getCurrLevel();
 
+void setCurrAnswer(char *answer);
+
+char *getCurrAnswer();
+
 // ----------------------------------------------------------------
+
 struct Answer {
     char *answer; // A, B, C or D
     UnicodeText value;

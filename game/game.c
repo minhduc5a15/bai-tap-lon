@@ -1,24 +1,36 @@
 #include "game.h"
 
+// --------------------- LEVEL ---------------------
 int currLevel = 0;
-bool running = false;
-Container *currentClickContainer = NULL;
 
 void setCurrLevel(int value) {
     currLevel = value;
+    return;
 }
 
-void setRunning() {
-    running = !running;
+int getCurrLevel() {
+    return currLevel;
+}
+
+// -----------------------------------------
+
+// --------------------- RUNNING ---------------------
+bool running = false;
+
+void setRunning(bool value) {
+    running = value;
+    return;
 }
 
 bool getRunning() {
     return running;
 }
 
-int getCurrLevel() {
-    return currLevel;
-}
+// -----------------------------------------
+
+// --------------------- CURRENT CLICKED CONTAINER ---------------------
+Container *currentClickContainer = NULL;
+
 
 void *setCurrentClickContainer(void *container) {
     currentClickContainer = container;
@@ -28,3 +40,20 @@ void *setCurrentClickContainer(void *container) {
 void *getCurrentClickContainer() {
     return currentClickContainer;
 }
+
+// -----------------------------------------
+
+// --------------------- CURRENT ANSWER ---------------------
+
+char *currAnswer = "";
+
+void setCurrAnswer(char *answer) {
+    currAnswer = strdup(answer);
+}
+
+char *getCurrAnswer() {
+    return currAnswer;
+}
+
+// -----------------------------------------
+

@@ -5,20 +5,22 @@ int main() {
     SetTargetFPS(FPS);
     backgroundImageInit();
     createDatabase();
-    setCurrLevel(1);
-    setAnswers(getCurrLevel());
-    getCurrentQuest(LEVEL_1);
-    int *passed = (int *) calloc(16, sizeof(int));
+
     while (!WindowShouldClose()) {
         BeginDrawing();
+        setCurrLevel(getCurrLevel());
+        setAnswers(getCurrLevel());
+        getCurrentQuest(getCurrLevel());
+        setRunning(); // true
+        printf("current level: %d\n", getCurrLevel());
         {
             setBackgroundImage();
             drawQuestion();
             drawAnswers();
         }
+        onEvents();
         EndDrawing();
     }
-    free(passed);
     CloseWindow();
     return 0;
 }

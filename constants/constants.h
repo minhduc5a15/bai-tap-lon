@@ -16,7 +16,7 @@
 
 typedef void (*Callback)();
 typedef void (*Callbacki)(int);
-typedef void (*CallbackContainer)(void *);
+typedef void (CallbackContainer)(void *);
 
 typedef Vector2 V2;
 typedef Vector3 V3;

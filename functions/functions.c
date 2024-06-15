@@ -9,7 +9,7 @@ int min(int a, int b) {
 }
 
 bool isClicked() {
-    return IsMouseButtonPressed(MOUSE_LEFT_BUTTON);
+    return IsMouseButtonPressed(MOUSE_BUTTON_LEFT);
 }
 
 void DrawRectWithBorderRadius(Rectangle rect, int radius, Color color) {

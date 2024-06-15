@@ -17,23 +17,25 @@ Container newContainer(Image img, Image imgSelected, Rectangle destRect, V2 posi
 
 __attribute__((unused)) void DrawContainer(Container container, float rotation, Color color) {
     if (container.isHovering) {
+//        color = container.hoverColor; // Sử dụng màu sắc khi di chuột qua nếu đang di chuột qua
         DrawTexturePro(container.textureSelected, container.srcRect, container.destRect, container.origin, rotation, color);
         return;
     }
     DrawTexturePro(container.texture, container.srcRect, container.destRect, container.origin, rotation, color);
 }
 
-__attribute__((unused)) void onClickContainer(Container container, Callbacki callback) {
+__attribute__((unused)) void onClickContainer(Container container, Callbacki callback, int t) {
     if (isClicked() && CheckCollisionPointRec(mousePos, container.destRect)) {
-//        callback(&container);
-        callback;
+//        printf("button a\n");
+        callback(t);
+        return;
     }
 }
 
 //static bool check = false;
 __attribute__((unused)) void onHoverContainer(Container *container, Callback callback) {
     if (CheckCollisionPointRec(mousePos, container->destRect)) {
-        callback();
+//        callback();
         container->isHovering = true;
         container->hoverColor = WHITE;
         currentHoverContainer = container;

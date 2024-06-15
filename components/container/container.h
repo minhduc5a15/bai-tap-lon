@@ -34,7 +34,7 @@ Container newContainer(Image img, Image imgSelected, Rectangle destRect, V2 posi
 void DrawContainer(Container container, float rotation, Color color);
 
 // Lắng nghe sự kiện onClick cho container
-void onClickContainer(Container container, Callbacki callback);
+void onClickContainer(Container container, Callbacki callback, int t);
 
 // Lắng nghe sự kiện onHover cho container
 void onHoverContainer(Container *container, Callback callback);
