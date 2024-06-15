@@ -6,8 +6,9 @@
 
 extern int currLevel;
 extern bool running;
-extern Container *currentClickContainer;
+extern bool passed;
 extern char *currAnswer;
+extern Container *currentClickContainer;
 
 void setRunning(bool value);
 
@@ -25,6 +26,9 @@ void setCurrAnswer(char *answer);
 
 char *getCurrAnswer();
 
+void setPassed(bool value);
+
+bool getPassed();
 // ----------------------------------------------------------------
 
 struct Answer {
@@ -63,6 +67,7 @@ extern void drawQuestion(void);
 #endif // WINDOW_QUESTION_H
 
 #ifndef WINDOW_DATA_H
+
 extern Question *questionDb;
 extern int *questions1_5;
 extern int *questions6_10;
@@ -103,9 +108,7 @@ extern void setBackgroundImage(void);
 
 // ----------------------Questions----------------------
 
-extern void questionInit(void);
 
-extern void setCurrentQuest(void);
 
 // ----------------------Read files----------------------
 char *readFile(const char *filename);

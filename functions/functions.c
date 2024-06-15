@@ -36,6 +36,14 @@ void test() {
     printf("Hello world\n");
 }
 
+void setTimeout(Callback callback, int seconds) {
+    int start = GetTime();
+    while (start < seconds) {
+        start = GetTime();
+    }
+    return callback();
+}
+
 char *addStr(const char *s1, const char *s2) {
     char *result = malloc(strlen(s1) + strlen(s2) + 1); // +1 for the null-terminator
     strcpy(result, s1);

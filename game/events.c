@@ -1,7 +1,9 @@
 #include "game.h"
 
-static void *cb(AnsContainer ansContainer, char *ans) {
-    if (currentHoverContainer) printf("%s\n", ans);
+static void callback() {
+    setCurrLevel(getCurrLevel() + 1);
+    setPassed(false);
+    printf("CURRENT LEVEL: %d\n", getCurrLevel());
 }
 
 void onEvents() {
@@ -10,11 +12,24 @@ void onEvents() {
     onHoverContainer(&ansContainerB.container, nullptr);
     onHoverContainer(&ansContainerC.container, nullptr);
     onHoverContainer(&ansContainerD.container, nullptr);
-    onClickContainer(ansContainerA.container, setCurrLevel, getCurrLevel() + 1);
-    onClickContainer(ansContainerB.container, setCurrLevel, getCurrLevel() + 1);
-    onClickContainer(ansContainerC.container, setCurrLevel, getCurrLevel() + 1);
-    onClickContainer(ansContainerD.container, setCurrLevel, getCurrLevel() + 1);
     if (currentHoverContainer == NULL) {
         SetMouseCursor(MOUSE_CURSOR_DEFAULT);
+        return;
+    }
+    if (currentHoverContainer == &ansContainerA.container) {
+        onClickContainer(ansContainerA.container, callback);
+        return;
+    }
+    if (currentHoverContainer == &ansContainerB.container) {
+        onClickContainer(ansContainerB.container, callback);
+        return;
+    }
+    if (currentHoverContainer == &ansContainerC.container) {
+        onClickContainer(ansContainerC.container, callback);
+        return;
+    }
+    if (currentHoverContainer == &ansContainerD.container) {
+        onClickContainer(ansContainerD.container, callback);
+        return;
     }
 }

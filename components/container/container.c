@@ -24,10 +24,10 @@ __attribute__((unused)) void DrawContainer(Container container, float rotation, 
     DrawTexturePro(container.texture, container.srcRect, container.destRect, container.origin, rotation, color);
 }
 
-__attribute__((unused)) void onClickContainer(Container container, Callbacki callback, int t) {
+__attribute__((unused)) void onClickContainer(Container container, Callback callback) {
     if (isClicked() && CheckCollisionPointRec(mousePos, container.destRect)) {
 //        printf("button a\n");
-        callback(t);
+        callback();
         return;
     }
 }

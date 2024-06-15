@@ -1,6 +1,20 @@
 #include "game.h"
 
+// --------------------- CURRENT ANSWER ---------------------
+bool passed = false;
+
+void setPassed(bool value) {
+    passed = value;
+}
+
+bool getPassed() {
+    return passed;
+}
+// ------------------------------------------
+
+
 // --------------------- LEVEL ---------------------
+
 int currLevel = 0;
 
 void setCurrLevel(int value) {

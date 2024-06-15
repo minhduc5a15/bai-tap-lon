@@ -18,6 +18,8 @@ V2 getRight(Rectangle parent, V2 child, int padding_left, int bonus_left);
 
 void test();
 
+void setTimeout(Callback callback, int seconds);
+
 char *addStr(const char *s1, const char *s2);
 
 #endif
