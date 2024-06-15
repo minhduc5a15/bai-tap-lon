@@ -1,6 +1,6 @@
 #include "answers.h"
 
-static V2 rights[4];
+static V2 pos[4];
 
 static int fontSize = 32;
 
@@ -23,13 +23,13 @@ void setAnswers(int level) {
     for (int i = 0; i < 4; ++i) {
         containers[i]->answer.answer = answers[i];
         setAnswer(containers[i], curr, imgs[i], imgsSelected[i], rects[i]);
-        rights[i] = getRight(containers[i]->container.destRect, MeasureTextEx(containers[i]->answer.value.font, containers[i]->answer.value.text, fontSize, SPACING), PADDING_LEFT, i % 2 == 0 ? 246 : 0);
+        pos[i] = getRight(containers[i]->container.destRect, MeasureTextEx(containers[i]->answer.value.font, containers[i]->answer.value.text, fontSize, SPACING), PADDING_LEFT, i % 2 == 0 ? 246 : 0);
     }
 }
 
 void drawAnswers() {
     for (int i = 0; i < 4; ++i) {
         DrawContainer(containers[i]->container, 0, WHITE);
-        DrawUnicodeText(containers[i]->answer.value, rights[i], fontSize, SPACING, WHITE);
+        DrawUnicodeText(containers[i]->answer.value, pos[i], fontSize, SPACING, WHITE);
     }
 }

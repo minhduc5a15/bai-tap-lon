@@ -29,7 +29,7 @@ int getCurrLevel() {
 // -----------------------------------------
 
 // --------------------- RUNNING ---------------------
-bool running = false;
+bool running = true;
 
 void setRunning(bool value) {
     running = value;

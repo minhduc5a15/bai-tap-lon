@@ -58,7 +58,7 @@ extern bool check;
 #ifndef WINDOW_QUESTION_H
 extern UnicodeText questionContent;
 extern Container questionContainer;
-extern Container currQuest;
+extern Question currQuest;
 
 extern void getCurrentQuest(int level);
 
