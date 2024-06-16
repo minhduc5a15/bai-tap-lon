@@ -11,12 +11,12 @@ static void setAnswer(AnsContainer *container, Question question, Image img, Ima
     container->answer = question.answers[letter - 'A'];
     container->answer.isCorrect = (letter == question.correctAnswer[0]);
     container->container = newContainer(img, imgSelected, rect, (V2) {});
-    container->answer.value = newUnicodeText(DEFAULT_FONT_DIR, addStr(addStr(container->answer.answer, ": "), container->answer.value.text));
+    container->answer.value = newUnicodeText(DEFAULT_FONT, addStr(addStr(container->answer.answer, ": "), container->answer.value.text));
 }
 
 void setAnswers(int level) {
-    Image imgs[4] = {LoadImage(A_ANSWER_DIR), LoadImage(B_ANSWER_DIR), LoadImage(C_ANSWER_DIR), LoadImage(D_ANSWER_DIR)};
-    Image imgsSelected[4] = {LoadImage(A_ANSWER_SELECTED_DIR), LoadImage(B_ANSWER_SELECTED_DIR), LoadImage(C_ANSWER_SELECTED_DIR), LoadImage(D_ANSWER_SELECTED_DIR)};
+    Image imgs[4] = {LoadImage(A_ANSWER), LoadImage(B_ANSWER), LoadImage(C_ANSWER_DIR), LoadImage(D_ANSWER_DIR)};
+    Image imgsSelected[4] = {LoadImage(A_ANSWER_SELECTED), LoadImage(B_ANSWER_SELECTED), LoadImage(C_ANSWER_SELECTED), LoadImage(D_ANSWER_SELECTED)};
     Question curr = questionDb[level];
     char *answers[4] = {"A", "B", "C", "D"};
     Rectangle rects[4] = {{0, 588, 640, 57}, {SCREEN_WIDTH - imgs[1].width, 588, 640, 57}, {0, 645, 640, 57}, {SCREEN_WIDTH - imgs[3].width, 645, 640, 57}};

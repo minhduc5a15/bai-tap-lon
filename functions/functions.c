@@ -14,8 +14,8 @@ bool isClicked() {
 
 void DrawRectWithBorderRadius(Rectangle rect, int radius, Color color) {
     // Vẽ hai hình chữ nhật
-    DrawRectangle(rect.x, rect.y + radius, rect.width, rect.height - 2 * radius, color);
-    DrawRectangle(rect.x + radius, rect.y, rect.width - 2 * radius, rect.height, color);
+    DrawRectangle(rect.x, rect.y + radius, rect.width, rect.height - 2 * radius, setOpacity(color, 0.5));
+    DrawRectangle(rect.x + radius, rect.y, rect.width - 2 * radius, rect.height, setOpacity(color, 0.5));
 
     // Vẽ bốn góc cong
     DrawCircleSector((V2) {rect.x + radius, rect.y + radius}, radius, 180, 270, 36, color);
@@ -36,12 +36,25 @@ void test() {
     printf("Hello world\n");
 }
 
+Color setOpacity(Color color, float opacity) {
+    float alpha = color.a;
+    color.a = alpha * opacity;
+    return color;
+}
+
 void setTimeout(Callback callback, int seconds) {
     int start = GetTime();
     while (start < seconds) {
         start = GetTime();
     }
     return callback();
+}
+
+void timeSleep(int seconds) {
+    int start = GetTime();
+    while (start < seconds) {
+        start = GetTime();
+    }
 }
 
 char *addStr(const char *s1, const char *s2) {

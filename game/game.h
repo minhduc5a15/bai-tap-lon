@@ -7,6 +7,7 @@
 extern int currLevel;
 extern bool running;
 extern bool passed;
+extern bool started;
 extern char *currAnswer;
 extern Container *currentClickContainer;
 
@@ -29,6 +30,11 @@ char *getCurrAnswer();
 void setPassed(bool value);
 
 bool getPassed();
+
+void setStarted(bool value);
+
+bool getStarted();
+
 // ----------------------------------------------------------------
 
 struct Answer {
@@ -54,7 +60,7 @@ typedef struct AnsContainer AnsContainer;
 // ------------------------background------------------------
 extern Container bgContainer;
 // ------------------------------------------------
-extern bool check;
+
 #ifndef WINDOW_QUESTION_H
 extern UnicodeText questionContent;
 extern Container questionContainer;
@@ -104,11 +110,33 @@ Question newQuestion(char *content, Answer answers[], const char *correctAnswer)
 // ----------------------Background----------------------
 extern void backgroundImageInit(void);
 
-extern void setBackgroundImage(void);
+extern void drawBackgroundImage(void);
 
-// ----------------------Questions----------------------
+// ----------------------Level----------------------
 
+#ifndef WINDOW_LEVEL_H
+extern Container LevelContainer;
+extern UnicodeText LevelValue;
+extern void setLevelContainer(int level);
+extern void DrawLevelContainer();
+#endif
 
+#ifndef WINDOW_RESTART_H
+extern Container restartContainer;
+extern UnicodeText restartValue;
+extern void restart();
+extern void drawRestartContainer();
+#endif
+
+#ifndef WINDOW_REWARD_H
+extern Container rewardsContainer;
+extern Container rewardBoard;
+extern Container rewardLogo;
+extern Container rewardBox;
+extern int currReward;
+extern void setRewardContainer(int level);
+extern void drawRewardContainer();
+#endif
 
 // ----------------------Read files----------------------
 char *readFile(const char *filename);

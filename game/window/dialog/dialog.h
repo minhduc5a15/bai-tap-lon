@@ -1,0 +1,6 @@
+#ifndef WINDOW_DIALOG_H
+#define WINDOW_DIALOG_H
+
+
+
+#endif // WINDOW_DIALOG_H

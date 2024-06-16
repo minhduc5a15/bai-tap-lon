@@ -1,5 +1,17 @@
 #include "game.h"
 
+// --------------------- IS STARTED GAME ---------------------
+bool started = false;
+
+void setStarted(bool value) {
+    started = value;
+}
+
+bool getStarted() {
+    return started;
+}
+// ------------------------------------------
+
 // --------------------- CURRENT ANSWER ---------------------
 bool passed = false;
 

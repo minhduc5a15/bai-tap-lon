@@ -1,7 +1,7 @@
 {
     "1-5": {
         "1": {
-            "content": "Đâu là một khái niệm trong vật lí",
+            "content": "Đâu là một khái niệm trong vật lý?",
             "answers": {
                 "A": "Áp đặt",
                 "B": "Áp chảo",
@@ -21,7 +21,7 @@
             "correctAnswer": "B"
         },
         "3": {
-            "content": "Môn võ nào sau đây có nguồn gốc từ Việt Nam",
+            "content": "Môn võ nào sau đây có nguồn gốc từ Việt Nam?",
             "answers": {
                 "A": "Vovinam",
                 "B": "Karatedo",
@@ -31,7 +31,7 @@
             "correctAnswer": "A"
         },
         "4": {
-            "content": "Câu thành ngữ nào dùng để nói về những người lười biếng, không chịu làm ăn",
+            "content": "Câu thành ngữ nào dùng để nói về những người lười biếng, không chịu làm ăn?",
             "answers": {
                 "A": "Ăn chực nằm chờ",
                 "B": "Ăn không ngồi rồi",
@@ -151,7 +151,7 @@
             "correctAnswer": "A"
         },
         "16": {
-            "content": "Con vật nào là một trong những nhân vật chính trong tác phẩm 'Tây Du Ký' của tác giả Ngô Thừa Ân",
+            "content": "Con vật nào là một trong những nhân vật chính trong tác phẩm 'Tây Du Ký' của tác giả Ngô Thừa Ân?",
             "answers": {
                 "A": "Bò",
                 "B": "Lợn",
@@ -171,7 +171,7 @@
             "correctAnswer": "B"
         },
         "18": {
-            "content": "'Quỷ đỏ' là biệt danh của câu lạc bộ bóng đá nào của Anh",
+            "content": "'Quỷ đỏ' là biệt danh của câu lạc bộ bóng đá nào của Anh?",
             "answers": {
                 "A": "Manchester United",
                 "B": "Everton",
@@ -249,6 +249,256 @@
                 "D": "Sét"
             },
             "correctAnswer": "C"
+        },
+        "26": {
+            "content": "Quả nào sau đây thường có tiết diện hình ngôi sao năm cánh?",
+            "answers": {
+                "A": "Mít",
+                "B": "Khế",
+                "C": "Nho",
+                "D": "Xoài"
+            },
+            "correctAnswer": "B"
+        },
+        "27": {
+            "content": "Đâu là loại hình ca hát không thể thiếu trong hội Lim ( Bắc Ninh ) hàng năm?",
+            "answers": {
+                "A": "Xẩm",
+                "B": "Bài Chòi",
+                "C": "Cải Lương",
+                "D": "Quan Họ"
+            },
+            "correctAnswer": "D"
+        },
+        "28": {
+            "content": "Nhân Vật hoạt hình nào sau đây không có xuất xứ từ Nhật Bản?",
+            "answers": {
+                "A": "Hello Kitty",
+                "B": "Luffy",
+                "C": "Naruto",
+                "D": "Búp bê barbie"
+            },
+            "correctAnswer": "D"
+        },
+        "29": {
+            "content": "Loài nào sau đây cùng họ với mèo?",
+            "answers": {
+                "A": "Sư tử",
+                "B": "Đại bàng",
+                "C": "Nai",
+                "D": "Cá voi sát thủ"
+            },
+            "correctAnswer": "A"
+        },
+        "30": {
+            "content": "Đâu là một phương pháp điều trị trong Y học cổ truyền?",
+            "answers": {
+                "A": "Ngải cứu",
+                "B": "Giải cứu",
+                "C": "Nghiên cứu",
+                "D": "Châm cứu"
+            },
+            "correctAnswer": "D"
+        },
+        "31": {
+            "content": "Loài cá nào được nhắc đến trong câu thành ngữ 'Cá .... một lứa'?",
+            "answers": {
+                "A": "Tra",
+                "B": "Chép",
+                "C": "Mè",
+                "D": "Trê"
+            },
+            "correctAnswer": "C"
+        },
+        "32": {
+            "content": "Từ nào sau đây viết đúng chính tả",
+            "answers": {
+                "A": "Hoàn bàng",
+                "B": "Bàng hoàng",
+                "C": "Bàng hoàn",
+                "D": "Bàn hoàng"
+            },
+            "correctAnswer": "B"
+        },
+        "33": {
+            "content": "Tỉnh nào sau đây không có đường bờ biển?",
+            "answers": {
+                "A": "Cao Bằng",
+                "B": "Phú Yên",
+                "C": "Kiên Giang",
+                "D": "Quảng Ninh"
+            },
+            "correctAnswer": "A"
+        },
+        "34": {
+            "content": "Đâu không phải là một cung hoàng đạo",
+            "answers": {
+                "A": "Bắc đẩu",
+                "B": "Bạch dương",
+                "C": "Nhân mã",
+                "D": "Ma kết"
+            },
+            "correctAnswer": "A"
+        },
+        "35": {
+            "content": "'Đêm năm canh, ngày sáu khắc' là câu nói liên quan đến đơn vị thời gian nào?",
+            "answers": {
+                "A": "Thời gian",
+                "B": "Diện tích",
+                "C": "Độ dài",
+                "D": "Vận tốc"
+            },
+            "correctAnswer": "A"
+        },
+        "36": {
+            "content": "Khi làm việc, các đầu bếp chuyên nghiệp thường đội mũ màu gì?",
+            "answers": {
+                "A": "Xám",
+                "B": "Đen",
+                "C": "Tím",
+                "D": "Trắng"
+            },
+            "correctAnswer": "D"
+        },
+        "37": {
+            "content": "Loại áo nào sau đây có thể giữ người mặc nổi trên mặt nước?",
+            "answers": {
+                "A": "Cộc",
+                "B": "Len",
+                "C": "Khoác",
+                "D": "Phao"
+            },
+            "correctAnswer": "D"
+        },
+        "38": {
+            "content": "'Quắc cần câu' là cụm từ thường được dùng để chỉ ai?",
+            "answers": {
+                "A": "Người say rượu nặng",
+                "B": "Người bị sốt cao",
+                "C": "Người đang tập trung",
+                "D": "Người hay cười"
+            },
+            "correctAnswer": "A"
+        },
+        "39": {
+            "content": "Hột vịt là cách gọi của người miền Nam chỉ phần nào của con vịt?",
+            "answers": {
+                "A": "Cổ",
+                "B": "Đùi",
+                "C": "Lườn",
+                "D": "Trứng"
+            },
+            "correctAnswer": "D"
+        },
+        "40": {
+            "content": "Trong tựa đề bài hát mới nhất, Đen Vâu mang gì về cho mẹ?",
+            "answers": {
+                "A": "Phiền",
+                "B": "Tiền",
+                "C": "Vợ",
+                "D": "Xe"
+            },
+            "correctAnswer": "B"
+        },
+        "41": {
+            "content": "Câu nào được dùng để nói về những gia đình có bốn thế hệ: cha, con, cháu, chắt cùng sống trong một nhà?",
+            "answers": {
+                "A": "Tứ mã nan truy",
+                "B": "Tứ tử trình làng",
+                "C": "Tứ đại đồng đường",
+                "D": "Tứ cố vô thân"
+            },
+            "correctAnswer": "C"
+        },
+        "42": {
+            "content": "Đâu là tên một kỳ quan kiến trúc của nước Ý?",
+            "answers": {
+                "A": "Spaghetti",
+                "B": "Pisa",
+                "C": "Cappuccino",
+                "D": "Espresso"
+            },
+            "correctAnswer": "B"
+        },
+        "43": {
+            "content": "Hành động nào còn thiếu trong câu nói nổi tiếng của triết gia Hi Lạp cổ đại Heraclitus: 'Không ai ... trên một dòng sông'?",
+            "answers": {
+                "A": "Tắm",
+                "B": "Bơi",
+                "C": "Câu",
+                "D": "Uống"
+            },
+            "correctAnswer": "A"
+        },
+        "44": {
+            "content": "Đâu không phải tên một phố cổ ở Hà Nội",
+            "answers": {
+                "A": "Hàng Thiếc",
+                "B": "Hàng Bạc",
+                "C": "Hàng Đồng",
+                "D": "Hàng Vàng"
+            },
+            "correctAnswer": "D"
+        },
+        "45": {
+            "content": "Lễ hội Oktoberfest ở Đức là lễ hội gì?",
+            "answers": {
+                "A": "Lễ hội cà chua",
+                "B": "Lễ hội phô mai",
+                "C": "Lễ hội Bia",
+                "D": "Lễ hội táo"
+            },
+            "correctAnswer": "C"
+        },
+        "46": {
+            "content": "Theo một truyện ngụ ngôn nổi tiếng của Aesop, con vật nào đã chiến thắng trong cuộc thi chạy?",
+            "answers": {
+                "A": "Rùa",
+                "B": "Thỏ",
+                "C": "Ngựa",
+                "D": "Hổ"
+            },
+            "correctAnswer": "A"
+        },
+        "47": {
+            "content": "Từ nào không được dùng để chỉ sắc thái của màu xanh",
+            "answers": {
+                "A": "Lá",
+                "B": "Dương",
+                "C": "Lét",
+                "D": "Chóe"
+            },
+            "correctAnswer": "D"
+        },
+        "48": {
+            "content": "Đâu là tên một lực lượng chuyên trách của nhà nước về bảo vệ rừng",
+            "answers": {
+                "A": "Kiểm Ngư",
+                "B": "Kiểm Lâm",
+                "C": "Kiểm Toán",
+                "D": "Kiểm Kê"
+            },
+            "correctAnswer": "B"
+        },
+        "49": {
+            "content": "Điền từ còn thiếu để thành tên một tiểu thuyết nổi tiếng: '... đã tôi thế đấy!'?",
+            "answers": {
+                "A": "Vàng",
+                "B": "Vôi",
+                "C": "Thép",
+                "D": "Gốm"
+            },
+            "correctAnswer": "C"
+        },
+        "50": {
+            "content": "Tòa nhà Landmark 81 cao nhất Việt Nam có bao nhiêu tầng?",
+            "answers": {
+                "A": "80",
+                "B": "81",
+                "C": "82",
+                "D": "83"
+            },
+            "correctAnswer": "B"
         }
     },
     "6-10": {
@@ -401,6 +651,246 @@
                 "D": "Liên hoan phim Moskva"
             },
             "correctAnswer": "C"
+        },
+        "16": {
+            "content": "Câu hát 'Thấy dòng sông sóng ngầu lên sắc đỏ, biết là anh nhớ về em đó' nói về dòng sông nào?",
+            "answers": {
+                "A": "Sông Đà",
+                "B": "Sông Đáy",
+                "C": "Sông Hồng",
+                "D": "Sông Thái Bình"
+            },
+            "correctAnswer": "C"
+        },
+        "17": {
+            "content": "Theo phương ngữ Nam Bộ , cần xé là vật dụng gì trong đời sống thường ngày?",
+            "answers": {
+                "A": "Xô",
+                "B": "Rương",
+                "C": "Chậu",
+                "D": "Sọt"
+            },
+            "correctAnswer": "D"
+        },
+        "18": {
+            "content": "Ai đang giữ kỷ lục giành giải thưởng Quả bóng vàng nhiều nhất Việt Nam?",
+            "answers": {
+                "A": "Nguyễn Hồng Sơn",
+                "B": "Lê Huỳnh Đức",
+                "C": "Phạm Thành Lương",
+                "D": "Lê Công Vinh"
+            },
+            "correctAnswer": "C"
+        },
+        "19": {
+            "content": "Gốm Mang Thít là sản phẩm thủ công truyền thống của địa phương nào?",
+            "answers": {
+                "A": "Hậu Giang",
+                "B": "Cần Thơ",
+                "C": "Bình Dương",
+                "D": "Vĩnh Long"
+            },
+            "correctAnswer": "D"
+        },
+        "20": {
+            "content": "Trong ngành Tâm lý học 'Gamophobia' là tên gọi của hội chứng gì?",
+            "answers": {
+                "A": "Sợ không gian kín",
+                "B": "Sợ tốc độ",
+                "C": "Sợ qua đường",
+                "D": "Sợ kết hôn"
+            },
+            "correctAnswer": "D"
+        },
+        "21": {
+            "content": "Bộ phim 'Muôn vị nhân gian' của đạo diễn Trần Anh Hùng được lấy bối cảnh tại đất nước nào?",
+            "answers": {
+                "A": "Ý",
+                "B": "Đức",
+                "C": "Anh",
+                "D": "Pháp"
+            },
+            "correctAnswer": "D"
+        },
+        "22": {
+            "content": "Ai được vinh danh trong danh sách 10 gương mặt trẻ Việt Nam tiêu biểu 2023? (lĩnh vực văn hóa nghệ thuật)",
+            "answers": {
+                "A": "Hòa Minzy",
+                "B": "Double2T",
+                "C": "Văn Mai Hương",
+                "D": "Nguyễn Đức Cường"
+            },
+            "correctAnswer": "D"
+        },
+        "23": {
+            "content": "Việt Nam đã được WHO công nhận thanh toán bệnh nào trên toàn quốc vào năm 2000?",
+            "answers": {
+                "A": "Bại liệt",
+                "B": "Dịch hạch",
+                "C": "Đậu mùa",
+                "D": "Viêm não Nhật Bản"
+            },
+            "correctAnswer": "A"
+        },
+        "24": {
+            "content": "Quốc gia nào có bảo tàng dành riêng để tôn vin ban nhạc nổi tiếng ABBA?",
+            "answers": {
+                "A": "Thụy Điển",
+                "B": "Đan Mạch",
+                "C": "Thụy Sỹ",
+                "D": "Hà Lan"
+            },
+            "correctAnswer": "A"
+        },
+        "25": {
+            "content": "Bánh pía là đặc sản của tỉnh nào",
+            "answers": {
+                "A": "Bến Tre",
+                "B": "Sóc Trăng",
+                "C": "Bạc Liêu",
+                "D": "Hậu Giang"
+            },
+            "correctAnswer": "B"
+        },
+        "26": {
+            "content": "Gia đình nhà bác học nào được mệnh danh là 'Gia đình Nobel'?",
+            "answers": {
+                "A": "Isaac Newton",
+                "B": "Albert Einstein",
+                "C": "Marie Curie",
+                "D": "Ernest Rutherford"
+            },
+            "correctAnswer": "C"
+        },
+        "27": {
+            "content": "Thế vận hội Mùa Đông Bắc Kinh 2022 có điểm gì đặc biệt",
+            "answers": {
+                "A": "Tổ chức dài ngày nhất",
+                "B": "Sử dụng gần 100% tuyết nhân tạo",
+                "C": "Không có khán giả",
+                "D": "Không có các môn trượt tuyết"
+            },
+            "correctAnswer": "B"
+        },
+        "28": {
+            "content": "Có bao nhiêu nhà ga trên tuyến đường sắt đô thị đầu tiên tại thủ đô Hà Nội (Cát Linh - Hà Đông)?",
+            "answers": {
+                "A": "10",
+                "B": "11",
+                "C": "12",
+                "D": "13"
+            },
+            "correctAnswer": "C"
+        },
+        "29": {
+            "content": "Logo của VTV3 không có màu sắc nào sau đây?",
+            "answers": {
+                "A": "Tím",
+                "B": "Đỏ",
+                "C": "Xanh lá",
+                "D": "Xanh dương"
+            },
+            "correctAnswer": "A"
+        },
+        "30": {
+            "content": "Cổng thông tin tiếp nhận phản ánh và công bố tin giả, do bộ TT&TT xây dựng, quản lý, ra đời năm 2021 có địa chỉ Website là gỉ?",
+            "answers": {
+                "A": "tingia.gov.vn",
+                "B": "fakenews.gov.vn",
+                "C": "xacthuc.vn",
+                "D": "thamdinh.tintuc.vn"
+            },
+            "correctAnswer": "A"
+        },
+        "31": {
+            "content": "Tháng nào sau đây không được nhắc đến trong bài 'Hạt gạo làng ta' của nhà thơ Trần Đăng Khoa?",
+            "answers": {
+                "A": "Tháng bảy",
+                "B": "Tháng tư",
+                "C": "Tháng ba",
+                "D": "Tháng sáu"
+            },
+            "correctAnswer": "B"
+        },
+        "32": {
+            "content": "Đội bóng nào đã lập kỷ lục vô địch cup C1 với thành tích toàn thắng?",
+            "answers": {
+                "A": "Real Madrid",
+                "B": "Bayern Munich",
+                "C": "Manchester United",
+                "D": "Baccelona"
+            },
+            "correctAnswer": "B"
+        },
+        "33": {
+            "content": "Ngày 17/12/2020, Đại hội đồng Liên Hợp Quốc đã thông qua đề xuất của Việt Nam lấy ngày 27/12 hàng năm là ngày gì?",
+            "answers": {
+                "A": "Ngày Quốc Tế hạnh phúc",
+                "B": "Ngày Quốc Tế đàn ông",
+                "C": "Ngày Quốc Tế về rừng",
+                "D": "Ngày Quốc Tế sẵn sàng phòng chống dịch bệnh"
+            },
+            "correctAnswer": "D"
+        },
+        "34": {
+            "content": "Đâu là trò chơi truyền hình có tuổi đời dài nhất trong các chương trình phát sóng trên VTV3? ",
+            "answers": {
+                "A": "Ai là Triệu Phú",
+                "B": "Vui-Khỏe-Có ích",
+                "C": "Chúng tôi - Chiến Sĩ",
+                "D": "Đường lên đỉnh Olympia"
+            },
+            "correctAnswer": "D"
+        },
+        "35": {
+            "content": "Cụm từ 'Nhát Trí, nhì Vân, tam Lân, tứ Cẩn'?",
+            "answers": {
+                "A": "4 bác sỹ",
+                "B": "4 họa sỹ",
+                "C": "4 nhà văn",
+                "D": "4 nhà khoa học"
+            },
+            "correctAnswer": "B"
+        },
+        "36": {
+            "content": "Theo thăm dò do Bộ Nông nghiệp, Thực phẩm & Nông thôn Hàn Quốc công bố ngày 7/1/2021, món Hàn nào được  người tiêu dùng toàn cầu ưa thích nhất?",
+            "answers": {
+                "A": "Thịt bò nướng",
+                "B": "Cơm trộn",
+                "C": "Kim chi",
+                "D": "Gà rán kiểu Hàn"
+            },
+            "correctAnswer": "C"
+        },
+        "37": {
+            "content": "Sân vận động có sức chứa lớn nhất thế giới hiện nay nằm ở quốc gia nào?",
+            "answers": {
+                "A": "Hoa Kỹ",
+                "B": "Tây Ban Nha",
+                "C": "Nhật Bản",
+                "D": "CHDCND Triều Tiên"
+            },
+            "correctAnswer": "D"
+        },
+        "38": {
+            "content": "Trong Lễ Hiển Linh (Epiphany) 2019, tổng thống Nga Putin đã thực hiện nghi thức gì?",
+            "answers": {
+                "A": "Đi trên than nóng",
+                "B": "Ngâm mình dưới hồ băng",
+                "C": "Cưỡi ngựa đi săn",
+                "D": "Câu cá trên băng"
+            },
+            "correctAnswer": "B"
+        },
+        "39": {
+            "content": "Đài thiên văn ALMA được đặt tại quốc gia Nam Mỹ nào?",
+            "answers": {
+                "A": "Brazil",
+                "B": "Uruguay",
+                "C": "Chile",
+                "D": "Peru"
+            },
+            "correctAnswer": "C"
         }
     },
     "11-15": {
@@ -505,7 +995,7 @@
             "correctAnswer": "B"
         },
         "11": {
-            "content": "Bác Hồ đã trồng cây tại địa điểm nao ngày nay ở Hà Nội để mở đầu phong trào 'Tết trồng cây'",
+            "content": "Bác Hồ đã trồng cây tại địa điểm nao ngày nay ở Hà Nội để mở đầu phong trào 'Tết trồng cây'?",
             "answers": {
                 "A": "Vườn Phủ Chủ tịch",
                 "B": "Công viên Bách Thảo",
@@ -513,6 +1003,126 @@
                 "D": "Công viên thống nhất"
             },
             "correctAnswer": "D"
+        },
+        "12": {
+            "content": "Hang Quân Y nằm ở đâu?",
+            "answers": {
+                "A": "Hải Phòng",
+                "B": "Thừa Thiên Huế",
+                "C": "Quảng Ngãi",
+                "D": "Đà Nẵng"
+            },
+            "correctAnswer": "A"
+        },
+        "13": {
+            "content": "Doanh Nhân nào được mệnh danh là 'ông vua đường thủy'?",
+            "answers": {
+                "A": "Đỗ Hữu Phương",
+                "B": "Lê Phát Đạt",
+                "C": "Lý Tường Quan",
+                "D": "Bạch Thái Bưởi"
+            },
+            "correctAnswer": "D"
+        },
+        "14": {
+            "content": "Tia nào được dùng để kiểm tra tiền giả?",
+            "answers": {
+                "A": "Tia X",
+                "B": "Tia hồng ngoại",
+                "C": "Tia cực tím",
+                "D": "Tia gamma"
+            },
+            "correctAnswer": "C"
+        },
+        "15": {
+            "content": "Sazae-san là bộ phim dài nhất thế giới ở thể loại nào?",
+            "answers": {
+                "A": "Hoạt hình",
+                "B": "Trinh thám",
+                "C": "Hành động",
+                "D": "Kinh dị"
+            },
+            "correctAnswer": "A"
+        },
+        "16": {
+            "content": "Lễ hội lửa Hogmanay đón mừng năm mới diễn ra ở đất nước nào?",
+            "answers": {
+                "A": "Ireland",
+                "B": "Scotland",
+                "C": "Ấn Độ",
+                "D": "Iran"
+            },
+            "correctAnswer": "B"
+        },
+        "17": {
+            "content": "Tác giả của phát minh nào sau đây là một người phụ nữ?",
+            "answers": {
+                "A": "Cần gạt nước ô tô",
+                "B": "Xe nôi",
+                "C": "Kính an toàn",
+                "D": "TV"
+            },
+            "correctAnswer": "A"
+        },
+        "18": {
+            "content": "Biểu tượng của hãng phim lớn nhất nước Nga (Mosfilm) là hình ảnh gì?",
+            "answers": {
+                "A": "Đại bàng hai đầu",
+                "B": "Tháp đòng hồ điện Kremlin",
+                "C": "Tượng đài Công Nông",
+                "D": "Cỗ xe tam mã"
+            },
+            "correctAnswer": "C"
+        },
+        "19": {
+            "content": "Trong năm vị tướng tài của Trần Hưng Đạo, ai có tài bắn cung bách phát bách trúng?",
+            "answers": {
+                "A": "Đại Hành",
+                "B": "Dã Tượng",
+                "C": "Nguyễn Địa Lô",
+                "D": "Lư Cao Mang"
+            },
+            "correctAnswer": "C"
+        },
+        "20": {
+            "content": "Sách đỏ Việt Nam được công bố lần đầu tiên năm bao nhiêu?",
+            "answers": {
+                "A": "1986",
+                "B": "1992",
+                "C": "1996",
+                "D": "2000"
+            },
+            "correctAnswer": "B"
+        },
+        "21": {
+            "content": "Cựu phi hành gia nào là người duy nhất vừa bay vào vũ trự vừa lặn xuống điểm sâu nhất đại dương thuộc rãnh Mariana?",
+            "answers": {
+                "A": "Bob Behnken",
+                "B": "Kate Rubins",
+                "C": "Kathy Sullivan",
+                "D": "Doug Hurley"
+            },
+            "correctAnswer": "C"
+        },
+        "22": {
+            "content": "Ngày 10/3 âm lịch hàng năm được chính thức quy định là ngày Quốc lễ Giỗ Tổ Hùng Vương vào triều đại nào trong lịch sử nước ta?",
+            "answers": {
+                "A": "Nhà Lý",
+                "B": "Nhà Hậu Lê",
+                "C": "Nhà Nguyễn",
+                "D": "Nhà Trần"
+            },
+            "correctAnswer": "C"
+        },
+        "23": {
+            "content": "Những vần thơ 'Trường Sơn chí lớn ông cha/n Cửu Long lòng mẹ bao la sóng trào' nằm trong tác phẩm nào của nhà thơ Lê Anh Xuân?",
+            "answers": {
+                "A": "Dáng đứng Việt Nam",
+                "B": "Nguyễn Văn Trỗi",
+                "C": "Gửi miền Bắc",
+                "D": "Hành quân giữa rừng xuân"
+            },
+            "correctAnswer": "B"
         }
     }
 }

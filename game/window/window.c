@@ -1,7 +1,7 @@
 #include "common.h"
 
 int window() {
-    setBackgroundImage();
+    drawBackgroundImage();
     drawQuestion();
     drawAnswers();
     onEvents();

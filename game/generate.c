@@ -4,7 +4,7 @@ static int getRandomQuestion(int begin, int end);
 
 int *generateQuestions(unsigned int lower_bound, unsigned int upper_bound) {
     int size = 5, current_size = 0;
-    bool *visited = (bool *) calloc(upper_bound + 1, sizeof(false));
+    bool *visited = (bool *) calloc(upper_bound + 1, sizeof(bool));
     int *result = (int *) malloc(size * sizeof(int));
     while (current_size < size) {
         int unique = getRandomQuestion(lower_bound, upper_bound);

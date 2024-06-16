@@ -20,6 +20,10 @@ void test();
 
 void setTimeout(Callback callback, int seconds);
 
+void timeSleep(int seconds);
+
+Color setOpacity(Color color, float opacity);
+
 char *addStr(const char *s1, const char *s2);
 
 #endif
