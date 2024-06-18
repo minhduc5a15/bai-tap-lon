@@ -3,7 +3,12 @@
 
 #include "../common.h"
 
-Container restartContainer;
-UnicodeText restartValue;
+Container restartButton;
+
+void endGame();
+
+void drawEndgameWindow();
+
+void onClickRestartButton(Callback callback);
 
 #endif

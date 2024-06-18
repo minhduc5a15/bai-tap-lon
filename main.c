@@ -1,41 +1,41 @@
 #include "common.h"
 
 int main() {
+    srand(time(NULL));
     SetTraceLogLevel(LOG_NONE);
     InitWindow(SCREEN_WIDTH, SCREEN_HEIGHT, TITLE_WINDOW_GAME);
     SetTargetFPS(FPS);
     backgroundImageInit();
     createDatabase();
-    UnicodeText text = newUnicodeText(DEFAULT_FONT, "YOU WIN");
-    UnicodeText lose = newUnicodeText(DEFAULT_FONT, "YOU LOSE");
+    startGame();
+    endGame();
     setCurrLevel(LEVEL_1);
     while (!WindowShouldClose()) {
-        if (!getPassed() && getCurrLevel() <= 15) {
+        if (!getPassed() && getCurrLevel() <= LEVEL_15) {
+            int level = getCurrLevel();
             setPassed(true);
-            setAnswers(getCurrLevel());
-            getCurrentQuest(getCurrLevel());
-            setLevelContainer(getCurrLevel());
-            setRewardContainer(getCurrLevel());
+            setAnswers(level);
+            getCurrentQuest(level);
+            setLevelContainer(level);
+            setRewardContainer(level);
         }
         BeginDrawing();
         {
-            if (currLevel <= LEVEL_15) {
-                if (getRunning()) {
-                    drawBackgroundImage();
-                    drawQuestion();
-                    drawAnswers();
-                    onEvents();
-                    drawRewardContainer();
-                }
-                else {
-                    DrawRectangle(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT, BLACK);
-                    DrawUnicodeText(lose, (V2) {300, 300}, 32, 2, WHITE);
-                }
+            if (!getStarted()) {
+                drawStartWindow();
             }
             else {
-                DrawRectangle(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT, BLACK);
-                DrawUnicodeText(text, (V2) {300, 300}, 32, 2, WHITE);
+                if (getEndgame()) {
+                    drawEndgameWindow();
+                }
             }
+            if (getStarted() && !getEndgame()) {
+                drawBackgroundImage();
+                drawQuestion();
+                drawAnswers();
+                drawRewardContainer();
+            }
+            onEvents();
         }
         EndDrawing();
     }

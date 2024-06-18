@@ -14,11 +14,13 @@ static void setAnswer(AnsContainer *container, Question question, Image img, Ima
     container->answer.value = newUnicodeText(DEFAULT_FONT, addStr(addStr(container->answer.answer, ": "), container->answer.value.text));
 }
 
+static Question curr;
+
 void setAnswers(int level) {
     Image imgs[4] = {LoadImage(A_ANSWER), LoadImage(B_ANSWER), LoadImage(C_ANSWER_DIR), LoadImage(D_ANSWER_DIR)};
     Image imgsSelected[4] = {LoadImage(A_ANSWER_SELECTED), LoadImage(B_ANSWER_SELECTED), LoadImage(C_ANSWER_SELECTED), LoadImage(D_ANSWER_SELECTED)};
-    Question curr = questionDb[level];
     char *answers[4] = {"A", "B", "C", "D"};
+    curr = questionDb[level];
     Rectangle rects[4] = {{0, 588, 640, 57}, {SCREEN_WIDTH - imgs[1].width, 588, 640, 57}, {0, 645, 640, 57}, {SCREEN_WIDTH - imgs[3].width, 645, 640, 57}};
     for (int i = 0; i < 4; ++i) {
         containers[i]->answer.answer = answers[i];
@@ -28,8 +30,10 @@ void setAnswers(int level) {
 }
 
 void drawAnswers() {
-    for (int i = 0; i < 4; ++i) {
-        DrawContainer(containers[i]->container, 0, WHITE);
-        DrawUnicodeText(containers[i]->answer.value, pos[i], fontSize, SPACING, WHITE);
+    if (!getIsSleeping()) {
+        for (int i = 0; i < 4; ++i) {
+            DrawContainer(containers[i]->container, 0, WHITE);
+            DrawUnicodeText(containers[i]->answer.value, pos[i], fontSize, SPACING, WHITE);
+        }
     }
 }

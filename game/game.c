@@ -5,6 +5,7 @@ bool started = false;
 
 void setStarted(bool value) {
     started = value;
+    printf("started: %d\n", started);
 }
 
 bool getStarted() {
@@ -83,3 +84,19 @@ char *getCurrAnswer() {
 
 // -----------------------------------------
 
+// --------------------- END GAME ---------------------
+bool endgame = false;
+
+void setEndgame(bool value) { endgame = value; }
+
+bool getEndgame() { return endgame; }
+// -----------------------------------------
+// --------------------- SLEEPING ---------------------
+
+bool isSleeping = false;
+
+void setIsSleeping(bool value) {
+    isSleeping = value;
+}
+
+bool getIsSleeping() { return isSleeping; }

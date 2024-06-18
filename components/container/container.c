@@ -1,6 +1,6 @@
 #include "container.h"
 
-Container *currentHoverContainer = NULL;
+Rectangle *currentHoverRect = NULL;
 
 __attribute__((unused)) void containerInit(Container *container, Image img, Image imgSelected, Rectangle destRect, V2 position) {
     *container = (Container) {img, imgSelected, LoadTextureFromImage(img), LoadTextureFromImage(imgSelected), (Rectangle) {0, 0, img.width, img.height}, destRect, position, WHITE, false};
@@ -29,15 +29,13 @@ __attribute__((unused)) void onClickContainer(Container container, Callback call
 __attribute__((unused)) void onHoverContainer(Container *container, Callback callback) {
     if (CheckCollisionPointRec(mousePos, container->destRect)) {
         container->isHovering = true;
-        container->hoverColor = WHITE;
-        currentHoverContainer = container;
+        currentHoverRect = &container->destRect;
         SetMouseCursor(MOUSE_CURSOR_POINTING_HAND);
     }
     else {
         container->isHovering = false;
-        container->hoverColor = WHITE;
-        if (currentHoverContainer == container) {
-            currentHoverContainer = NULL;
+        if (currentHoverRect == &container->destRect) {
+            currentHoverRect = NULL;
         }
     }
 }

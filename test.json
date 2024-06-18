@@ -499,11 +499,31 @@
                 "D": "83"
             },
             "correctAnswer": "B"
+        },
+        "51": {
+            "content": "Đâu là tên một loại số trong toán học?",
+            "answers": {
+                "A": "Chính phương",
+                "B": "Chính quy",
+                "C": "Chính trị",
+                "D": "Chính sách"
+            },
+            "correctAnswer": "A"
+        },
+        "52": {
+            "content": "Màu đỏ của một số loại rượu vang chủ yếu là do loại quả nào tạo ra?",
+            "answers": {
+                "A": "Thanh long",
+                "B": "Dưa hấu",
+                "C": "Cà chua",
+                "D": "Nho"
+            },
+            "correctAnswer": "D"
         }
     },
     "6-10": {
         "1": {
-            "content": "'Gió mưa là bệnh của trời\nTương tư là bệnh của tôi yêu nàng' là câu thơ của tác giả nào?",
+            "content": "'Gió mưa là bệnh của trời/ Tương tư là bệnh của tôi yêu nàng' là câu thơ của tác giả nào?",
             "answers": {
                 "A": "Xuân Diệu",
                 "B": "Nguyễn Bính",
@@ -891,6 +911,46 @@
                 "D": "Peru"
             },
             "correctAnswer": "C"
+        },
+        "40": {
+            "content": "Kyat là đơn vị tiền tệ chính thức của quốc gia Đông Nam Á nào?",
+            "answers": {
+                "A": "Malaysia",
+                "B": "Singapore",
+                "C": "Lào",
+                "D": "Myanmar"
+            },
+            "correctAnswer": "D"
+        },
+        "41": {
+            "content": "FourFourTwo là một trong những tạp chí chuyên biệt lớn nhất thế giới của môn thể thao nào?",
+            "answers": {
+                "A": "Cầu lông",
+                "B": "Bóng đá",
+                "C": "Điền kinh",
+                "D": "Bóng rổ"
+            },
+            "correctAnswer": "B"
+        },
+        "42": {
+            "content": "Tính đến nay, thành tích tốt nhất mà đại diện Việt Nam giành được tại các cuộc thi Hoa hậu Hoàn vũ thế giới là gì?",
+            "answers": {
+                "A": "Top 21",
+                "B": "Top 15",
+                "C": "Top 5",
+                "D": "Top 3"
+            },
+            "correctAnswer": "C"
+        },
+        "43": {
+            "content": "Zayn Malik là cựu thành viên của nhóm nhạc nào?",
+            "answers": {
+                "A": "Maroon 5",
+                "B": "One Direction",
+                "C": "Big Bang",
+                "D": "Backstreet Boys"
+            },
+            "correctAnswer": "B"
         }
     },
     "11-15": {

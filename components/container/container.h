@@ -33,7 +33,7 @@ Container newContainer(Image img, Image imgSelected, Rectangle destRect, V2 posi
 // Hàm vẽ container
 void DrawContainer(Container container, float rotation, Color color);
 
-// Lắng nghe sự kiện onClick cho container
+// Lắng nghe sự kiện chooseAnswer cho container
 void onClickContainer(Container container, Callback callback);
 
 // Lắng nghe sự kiện onHover cho container

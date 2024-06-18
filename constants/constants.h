@@ -46,25 +46,27 @@ extern const int FPS; /* Frames per second */
 extern const int PADDING_LEFT; /*px */
 extern const int SPACING; /*px */
 extern const char *BACKGROUND_IMAGE; /* Đường dẫn tới background */
+extern const char *START_BACKGROUND;
 extern const char *QUESTION_IMAGE; /* Đường dẫn tới background của câu hỏi */
-extern const char *LEFT_ANSWER_IMAGE; /* Đường dẫn tới background của đáp án bên trái (A, C) */
-extern const char *RIGHT_ANSWER_IMAGE; /* Đường dẫn tới background của đáp án bên phải (B, D) */
 extern const char *DEFAULT_FONT;
 extern const char *A_ANSWER;
 extern const char *A_ANSWER_SELECTED;
+extern const char *A_RIGHT_ANSWER;
 extern const char *B_ANSWER;
 extern const char *B_ANSWER_SELECTED;
+extern const char *B_RIGHT_ANSWER;
 extern const char *C_ANSWER_DIR;
 extern const char *C_ANSWER_SELECTED;
+extern const char *C_RIGHT_ANSWER;
 extern const char *D_ANSWER_DIR;
 extern const char *D_ANSWER_SELECTED;
+extern const char *D_RIGHT_ANSWER;
 extern const char *CURRENT_LEVEL_BG;
 extern const char *REWARDS_BG;
 extern const char *LOGO;
 extern const Color TEXT_COLOR;
-extern const char *START_BUTTON_DIR;
+extern const char *START_BUTTON;
 extern const char *REWARD_BOARD;
-extern const char *TITLE_WINDOW_LOGIN;
 extern const char *TITLE_WINDOW_GAME;
 extern const Color TRANSPARENT;
 #endif

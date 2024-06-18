@@ -26,5 +26,13 @@ Color setOpacity(Color color, float opacity);
 
 char *addStr(const char *s1, const char *s2);
 
+void onClickRect(Rectangle rect, Callback callback);
+
+bool isHoverRect(Rectangle rect);
+
+void onHoverRect(Rectangle rect);
+
+void wait(int seconds);
+
 #endif
 

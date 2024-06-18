@@ -1,13 +1,13 @@
 #include "rewards.h"
 
 static const int rewards[16] = {0, 200, 400, 600, 1000, 2000, 3000, 6000, 10000, 14000, 22000, 30000, 40000, 60000, 85000, 150000};
-static const int pos[16] = {0, 392, 365, 335, 308, 281, 254, 227, 200, 173, 146, 119, 93, 65, 38, 12};
+static const int pos[16] = {0, 392, 365, 335, 308, 281, 254, 227, 200, 173, 146, 119, 93, 65, 41, 12};
 
 static UnicodeText reward;
 static V2 currMeasureText;
 
 void setRewardContainer(int level) {
-    currReward = rewards[level];
+    currReward = rewards[level - 1];
     char tmp[25];
     sprintf(tmp, "%d", currReward * 1000);
     auto a = addStr(tmp, " VND");

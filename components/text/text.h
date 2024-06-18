@@ -9,7 +9,6 @@ struct UnicodeText {
     char *text;
     int codepointCount;
     int *codepoints;
-    int codepointsNoDupsCount;
 };
 
 typedef struct UnicodeText UnicodeText;

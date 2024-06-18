@@ -63,3 +63,34 @@ char *addStr(const char *s1, const char *s2) {
     strcat(result, s2);
     return result;
 }
+
+void onClickRect(Rectangle rect, Callback callback) {
+    if (isClicked() && CheckCollisionPointRec(mousePos, rect)) {
+        callback();
+        return;
+    }
+}
+
+bool isHoverRect(Rectangle rect) {
+    return CheckCollisionPointRec(mousePos, rect);
+}
+
+void onHoverRect(Rectangle rect) {
+    if (isClicked() && CheckCollisionPointRec(mousePos, rect)) {
+        SetMouseCursor(MOUSE_CURSOR_POINTING_HAND);
+        return;
+    }
+}
+
+
+void wait(int seconds) {
+    int start = GetTime();
+    int dest = start + seconds;
+    int prev = start;
+    while (start < dest) {
+        start = GetTime();
+        if (prev != start) printf("%d\n", start);
+        prev = start;
+    }
+    printf("end = %d\n", dest);
+}

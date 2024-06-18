@@ -9,7 +9,17 @@ extern bool running;
 extern bool passed;
 extern bool started;
 extern char *currAnswer;
+extern bool endgame;
+extern bool isSleeping;
 extern Container *currentClickContainer;
+
+void setIsSleeping(bool value);
+
+bool getIsSleeping();
+
+void setEndgame(bool value);
+
+bool getEndgame();
 
 void setRunning(bool value);
 
@@ -60,6 +70,18 @@ typedef struct AnsContainer AnsContainer;
 // ------------------------background------------------------
 extern Container bgContainer;
 // ------------------------------------------------
+
+#ifndef WINDOW_START_H
+extern Container startWindow;
+extern Container startButton;
+
+extern void startGame();
+
+extern void drawStartWindow();
+
+extern void onClickStartButton(Callback callback);
+
+#endif
 
 #ifndef WINDOW_QUESTION_H
 extern UnicodeText questionContent;
@@ -117,15 +139,24 @@ extern void drawBackgroundImage(void);
 #ifndef WINDOW_LEVEL_H
 extern Container LevelContainer;
 extern UnicodeText LevelValue;
+
 extern void setLevelContainer(int level);
+
 extern void DrawLevelContainer();
+
 #endif
 
 #ifndef WINDOW_RESTART_H
-extern Container restartContainer;
-extern UnicodeText restartValue;
-extern void restart();
-extern void drawRestartContainer();
+extern Container restartButton;
+
+extern void endGame();
+
+extern void drawEndgameWindow();
+
+extern void onClickRestartButton(Callback callback);
+
+extern void onHoverStartButton();
+
 #endif
 
 #ifndef WINDOW_REWARD_H
@@ -134,8 +165,16 @@ extern Container rewardBoard;
 extern Container rewardLogo;
 extern Container rewardBox;
 extern int currReward;
+
 extern void setRewardContainer(int level);
+
 extern void drawRewardContainer();
+
+#endif
+
+#ifndef WINDOW_ASSISTANCE_H
+extern Container AssistContainer;
+
 #endif
 
 // ----------------------Read files----------------------
@@ -151,7 +190,7 @@ int *generateQuestions(unsigned int lower_bound, unsigned int upper_bound);
 // ----------------------Events----------------------
 
 extern bool isHovering;
-extern Container *currentHoverContainer;
+extern Rectangle *currentHoverRect;
 
 void onEvents();
 
