@@ -27,9 +27,8 @@ void setRewardContainer(int level) {
 void drawRewardContainer() {
     DrawContainer(rewardsContainer, 0, WHITE);
     DrawContainer(rewardBoard, 0, WHITE);
-//    DrawContainer(rewardLogo, 0, WHITE);
-    DrawRectangle(SCREEN_WIDTH / 2 - rewardBoard.img.width / 2, SCREEN_HEIGHT / 2 - rewardBoard.img.height / 2 - PADDING_LEFT, rewardBoard.img.width, rewardBoard.img.height, setOpacity(BLACK, 0.5));
-//    DrawRectangle(SCREEN_WIDTH / 2 - rewardBoard.img.width / 2, SCREEN_HEIGHT / 2 - rewardBoard.img.height / 2 - PADDING_LEFT, rewardBoard.img.width, rewardBoard.img.height, setOpacity(DARKBLUE, 0.5));
+    DrawContainer(rewardLogo, 0, WHITE);
+    DrawRectangle(SCREEN_WIDTH / 2 - rewardBoard.img.width / 2, SCREEN_HEIGHT / 2 - rewardBoard.img.height / 2 - PADDING_LEFT, rewardBoard.img.width, rewardBoard.img.height, setOpacity(BLACK, 0.75));
     DrawUnicodeText(reward, getCenter(rewardBoard.destRect, currMeasureText), 40, 0, WHITE);
     if (currLevel >= 1) DrawRectangle(SCREEN_WIDTH - 235, SCREEN_HEIGHT / 2 - 306 + pos[getCurrLevel()], 200, 28, setOpacity(YELLOW, 0.65));
 }

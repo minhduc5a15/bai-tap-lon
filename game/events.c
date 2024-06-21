@@ -2,49 +2,130 @@
 
 static char correctAns;
 
-static void setAnsBackground(AnsContainer *ansContainer, char answer) {
-    if (correctAns != answer) return;
-    char *dir = nullptr;
-    switch (correctAns) {
-        case 'A':
-            dir = strdup(A_RIGHT_ANSWER);
-            break;
-        case 'B':
-            dir = strdup(B_RIGHT_ANSWER);
-            break;
-        case 'C':
-            dir = strdup(C_RIGHT_ANSWER);
-            break;
-        case 'D':
-            dir = strdup(D_RIGHT_ANSWER);
-            break;
-        default:
-            break;
+static const int dialogWidth = 450;
+static const int dialogHeight = 200;
+static const int buttonWidth = 100;
+static const int buttonHeight = 50;
+
+static void onClickFiftyFifty() {
+    if (fiftyfiftyAssist.isUsed) return;
+    fiftyfiftyAssist.isUsed = true;
+    auto removeAnswers = fiftyFifty(correctAns);
+    for (int i = 0; i < 2; ++i) {
+        printf("%c ", removeAnswers[i]);
     }
-    printf("dir = %s\n", dir);
-    Image img = LoadImage(dir);
-    ansContainer->container = newContainer(img, img, ansContainer->container.destRect, (V2){});
+    for (int i = 0; i < 2; ++i) {
+        switch (removeAnswers[i]) {
+            case 'A':
+                ansContainerA.answer.value = newUnicodeText(DEFAULT_FONT, " ");
+                break;
+            case 'B':
+                ansContainerB.answer.value = newUnicodeText(DEFAULT_FONT, " ");
+                break;
+            case 'C':
+                ansContainerC.answer.value = newUnicodeText(DEFAULT_FONT, " ");
+                break;
+            case 'D':
+                ansContainerD.answer.value = newUnicodeText(DEFAULT_FONT, " ");
+                break;
+            default:
+                break;
+        }
+    }
+    free(removeAnswers);
 }
 
-static void chooseAnswer() {
+static void onClickPlusOne() {
+    if (plusOneAssist.isUsed) return;
+    Rectangle rect = {SCREEN_WIDTH / 2 - dialogWidth / 2, SCREEN_HEIGHT / 2 - dialogHeight / 2, dialogWidth, dialogHeight};
+    Rectangle btnRect = {0, 0, buttonWidth, buttonHeight};
+    char suggestedAnswer = plusOne(correctAns);
+    char temp[2];
+    temp[0] = suggestedAnswer;
+    temp[1] = '\0';
+    setDialog(&currentDialog, rect, btnRect, addStr("Bạn đồng hành gợi ý đáp án ", temp));
+    currentDialog.isOpening = true;
+    plusOneAssist.isUsed = true;
+    printf("suggestedAnswer %c\n", suggestedAnswer);
+}
+
+static void onClickAskExpert() {
+    if (askExpertAssist.isUsed) return;
+    Rectangle rect = {SCREEN_WIDTH / 2 - dialogWidth / 2, SCREEN_HEIGHT / 2 - dialogHeight / 2, dialogWidth, dialogHeight};
+    Rectangle btnRect = {0, 0, buttonWidth, buttonHeight};
+    char suggestedAnswer = askExpert(correctAns);
+    char temp[2];
+    temp[0] = suggestedAnswer;
+    temp[1] = '\0';
+    setDialog(&currentDialog, rect, btnRect, addStr("Các chuyên gia gợi ý đáp án ", temp));
+    currentDialog.isOpening = true;
+    askExpertAssist.isUsed = true;
+    printf("suggestedAnswer %c\n", suggestedAnswer);
+}
+
+static void onClose() {
+    currentDialog.isOpening = false;
+}
+
+#ifndef CHOOSE_CORRECT_ANSWER
+
+static void nextLevel() {
+    showCorrectAnswer();
+    setCurrLevel(getCurrLevel() + 1);
+    setPassed(true);
+    setIsSleeping(false);
+    Sound s = LoadSound("D:/code/Repositories/raylib_project/assets/audio/Correct_Answer.mp3");
+    PlaySound(s);
+}
+
+static void chooseCorrectAnswer() {
+    setIsSleeping(true);
     currentHoverRect = nullptr;
     SetMouseCursor(MOUSE_CURSOR_DEFAULT);
-    setAnsBackground(&ansContainerA, 'A');
-    setAnsBackground(&ansContainerB, 'B');
-    setAnsBackground(&ansContainerC, 'C');
-    setAnsBackground(&ansContainerD, 'D');
-    drawAnswers();
-//    wait(2);
-    setIsSleeping(false);
-    setCurrLevel(getCurrLevel() + 1);
-//    setPassed(false);
+    sleep(1);
+    nextLevel();
     printf("CURRENT LEVEL: %d\n", getCurrLevel());
 }
+
+static void nextQuestion() {
+    chooseCorrectAnswer();
+    setIsInit(false);
+    setPassed(true);
+}
+
+#endif
+#ifndef CHOOSE_WRONG_ANSWER
+
+static void stop() {
+    showCorrectAnswer();
+    setPassed(true);
+    setIsSleeping(false);
+    Sound s = LoadSound("D:/code/Repositories/raylib_project/assets/audio/Losing_Answer.mp3");
+    PlaySound(s);
+}
+
+static void chooseWrongAnswer() {
+    setIsSleeping(true);
+    currentHoverRect = nullptr;
+    SetMouseCursor(MOUSE_CURSOR_DEFAULT);
+    sleep(1);
+    stop();
+}
+
+static void lose() {
+    chooseWrongAnswer();
+    sleep(1);
+    setEndgame(true);
+    drawEndgameWindow();
+}
+
+#endif
 
 static void restart() {
     setPassed(false);
     setCurrLevel(LEVEL_1);
     setEndgame(false);
+    setIsInit(false);
     createDatabase();
 }
 
@@ -52,22 +133,35 @@ static void start() {
     currentHoverRect = nullptr;
     setEndgame(false);
     setStarted(true);
+    setIsInit(true);
     createDatabase();
-}
-
-static void lose() {
-    setEndgame(true);
-    createDatabase();
+    Sound s = LoadSound("D:/code/Repositories/raylib_project/assets/audio/Start or end background sound.mp3");
+    PlaySound(s);
 }
 
 void onEvents() {
-    if (currentHoverRect == NULL) {
+    correctAns = currQuest.correctAnswer[0];
+    if (currentHoverRect == nullptr) {
         SetMouseCursor(MOUSE_CURSOR_DEFAULT);
     }
-    onHoverContainer(&ansContainerA.container, nullptr);
-    onHoverContainer(&ansContainerB.container, nullptr);
-    onHoverContainer(&ansContainerC.container, nullptr);
-    onHoverContainer(&ansContainerD.container, nullptr);
+#ifndef HOVER
+    if (!getPassed()) {
+        onHoverContainer(&ansContainerA.container, nullptr);
+        onHoverContainer(&ansContainerB.container, nullptr);
+        onHoverContainer(&ansContainerC.container, nullptr);
+        onHoverContainer(&ansContainerD.container, nullptr);
+        onHoverRect(currentDialog.button);
+    }
+#endif
+#ifndef CLICK
+    {
+        onClickRect(fiftyfiftyAssist.container.destRect, onClickFiftyFifty);
+        onClickRect(plusOneAssist.container.destRect, onClickPlusOne);
+        onClickRect(askExpertAssist.container.destRect, onClickAskExpert);
+        if (currentDialog.isOpening) {
+            onClickRect(currentDialog.button, onClose);
+        }
+    }
     if (!getStarted()) {
         onHoverStartButton();
         onClickStartButton(start);
@@ -77,22 +171,21 @@ void onEvents() {
         onClickRestartButton(restart);
         return;
     }
-    bool isCorrect = false;
-    correctAns = currQuest.correctAnswer[0];
     if (currentHoverRect == &ansContainerA.container.destRect) {
-        onClickContainer(ansContainerA.container, correctAns == 'A' ? chooseAnswer : lose);
+        onClickContainer(ansContainerA.container, correctAns == 'A' ? nextQuestion : lose);
         return;
     }
     if (currentHoverRect == &ansContainerB.container.destRect) {
-        onClickContainer(ansContainerB.container, correctAns == 'B' ? chooseAnswer : lose);
+        onClickContainer(ansContainerB.container, correctAns == 'B' ? nextQuestion : lose);
         return;
     }
     if (currentHoverRect == &ansContainerC.container.destRect) {
-        onClickContainer(ansContainerC.container, correctAns == 'C' ? chooseAnswer : lose);
+        onClickContainer(ansContainerC.container, correctAns == 'C' ? nextQuestion : lose);
         return;
     }
     if (currentHoverRect == &ansContainerD.container.destRect) {
-        onClickContainer(ansContainerD.container, correctAns == 'D' ? chooseAnswer : lose);
+        onClickContainer(ansContainerD.container, correctAns == 'D' ? nextQuestion : lose);
         return;
     }
+#endif
 }

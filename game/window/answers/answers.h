@@ -10,6 +10,8 @@ AnsContainer ansContainerD;
 
 void setAnswers(int level);
 
+void showCorrectAnswer();
+
 void drawAnswers();
 
 #endif

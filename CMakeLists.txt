@@ -17,6 +17,9 @@ file(GLOB_RECURSE WINDOW "window/*.c")
 file(GLOB_RECURSE HEADERS "./*.h")
 include_directories(${CURL_INCLUDE_DIR})
 add_executable(raylib_project main.c ${HEADERS} ${CONSTANTS} ${COMPONENTS} ${GAME} ${FUNCTIONS} ${WINDOW}
-        game/window/assistance/assistance.h)
+        game/window/assistance/assistance.h
+        components/sound/sound.h
+        components/sound/sound.h
+        components/sound/sound.c)
 target_include_directories(raylib_project PRIVATE ${RAYLIB_INCLUDE_DIRS} ${CJSON_INCLUDE_DIRS})
 target_link_libraries(raylib_project PRIVATE ${RAYLIB_LIBRARIES} ${CJSON_LIBRARIES} ${CURL_LIBRARIES})

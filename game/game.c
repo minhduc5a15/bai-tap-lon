@@ -100,3 +100,15 @@ void setIsSleeping(bool value) {
 }
 
 bool getIsSleeping() { return isSleeping; }
+
+// -------------------- IS INIT --------------------------------
+
+bool isInit = false;
+
+void setIsInit(bool value) {
+    isInit = value;
+}
+
+bool getIsInit() {
+    return isInit;
+}

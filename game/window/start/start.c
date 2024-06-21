@@ -44,6 +44,6 @@ void drawStartWindow() {
         DrawRectangle(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT, setOpacity(BLACK, 0.5));
         DrawContainer(startButton, 0, WHITE);
         DrawUnicodeText(text, getCenter(startButton.destRect, MeasureTextEx(text.font, text.text, 30, 0)), 30, 0, WHITE);
-        printf("count: %d\n", ++count);
+//        printf("count: %d\n", ++count);
     }
 }

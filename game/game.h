@@ -11,7 +11,12 @@ extern bool started;
 extern char *currAnswer;
 extern bool endgame;
 extern bool isSleeping;
+extern bool isInit;
 extern Container *currentClickContainer;
+
+void setIsInit(bool value);
+
+bool getIsInit();
 
 void setIsSleeping(bool value);
 
@@ -46,26 +51,44 @@ void setStarted(bool value);
 bool getStarted();
 
 // ----------------------------------------------------------------
-
+#ifndef STRUCT_H
 struct Answer {
     char *answer; // A, B, C or D
     UnicodeText value;
     bool isCorrect;
 };
-typedef struct Answer Answer;
 
 struct Question {
     char *content;
-    Answer answers[4];
+    struct Answer answers[4];
     char *correctAnswer;
 };
-typedef struct Question Question;
 
 struct AnsContainer {
-    Answer answer;
+    struct Answer answer;
     Container container;
 };
+
+struct Assistance {
+    Container container;
+    Container usedContainer;
+    bool isUsed;
+};
+
+struct Dialog {
+    Rectangle container;
+    Rectangle button;
+    UnicodeText content;
+    float radius;
+    bool isOpening;
+};
+
+typedef struct Answer Answer;
+typedef struct Question Question;
+typedef struct Assistance Assistance;
 typedef struct AnsContainer AnsContainer;
+typedef struct Dialog Dialog;
+#endif
 
 // ------------------------background------------------------
 extern Container bgContainer;
@@ -115,6 +138,8 @@ extern AnsContainer ansContainerC;
 extern AnsContainer ansContainerD;
 
 extern void setAnswers(int level);
+
+extern void showCorrectAnswer();
 
 extern void drawAnswers();
 
@@ -173,7 +198,32 @@ extern void drawRewardContainer();
 #endif
 
 #ifndef WINDOW_ASSISTANCE_H
-extern Container AssistContainer;
+
+extern Container assistanceContainer;
+extern Assistance fiftyfiftyAssist;
+extern Assistance plusOneAssist;
+extern Assistance askExpertAssist;
+//extern Assistance
+
+extern void setAssistanceContainer(void);
+
+extern void drawAssistanceContainer(void);
+
+extern char plusOne(char correctAnswer);
+
+extern char *fiftyFifty(char correctAnswer);
+
+extern char askExpert(char correctAnswer);
+
+#endif
+
+#ifndef WINDOW_DIALOG_H
+
+extern Dialog currentDialog;
+
+extern void setDialog(Dialog *dialog, Rectangle rectangle, Rectangle button, char *content);
+
+extern void DrawDialog();
 
 #endif
 
@@ -189,11 +239,9 @@ void saveData(Question **db, int *length, char *range);
 int *generateQuestions(unsigned int lower_bound, unsigned int upper_bound);
 // ----------------------Events----------------------
 
-extern bool isHovering;
 extern Rectangle *currentHoverRect;
 
 void onEvents();
-
 
 #ifdef __cplusplus
 }

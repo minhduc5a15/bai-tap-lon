@@ -29,8 +29,54 @@ void setAnswers(int level) {
     }
 }
 
+void showCorrectAnswer() {
+    char correctAns = currQuest.correctAnswer[0];
+    char *dir;
+    switch (correctAns) {
+        case 'A':
+            dir = strdup(A_RIGHT_ANSWER);
+            break;
+        case 'B':
+            dir = strdup(B_RIGHT_ANSWER);
+            break;
+        case 'C':
+            dir = strdup(C_RIGHT_ANSWER);
+            break;
+        case 'D':
+            dir = strdup(D_RIGHT_ANSWER);
+            break;
+        default:
+            break;
+    }
+    auto img = LoadImage(dir);
+    if (correctAns == 'A') {
+        ansContainerA.container = newContainer(img, img, ansContainerA.container.destRect, (V2) {});
+    }
+    else if (correctAns == 'B') {
+        ansContainerB.container = newContainer(img, img, ansContainerB.container.destRect, (V2) {});
+    }
+    else if (correctAns == 'C') {
+        ansContainerC.container = newContainer(img, img, ansContainerC.container.destRect, (V2) {});
+    }
+    else if (correctAns == 'D') {
+        ansContainerD.container = newContainer(img, img, ansContainerD.container.destRect, (V2) {});
+    }
+}
+
+static bool isShowCorrectAns = false;
+
 void drawAnswers() {
     if (!getIsSleeping()) {
+        for (int i = 0; i < 4; ++i) {
+            DrawContainer(containers[i]->container, 0, WHITE);
+            DrawUnicodeText(containers[i]->answer.value, pos[i], fontSize, SPACING, WHITE);
+        }
+    }
+    else {
+        if (!isShowCorrectAns) {
+            showCorrectAnswer();
+            isShowCorrectAns = true;
+        }
         for (int i = 0; i < 4; ++i) {
             DrawContainer(containers[i]->container, 0, WHITE);
             DrawUnicodeText(containers[i]->answer.value, pos[i], fontSize, SPACING, WHITE);

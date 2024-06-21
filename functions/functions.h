@@ -20,7 +20,7 @@ void test();
 
 void setTimeout(Callback callback, int seconds);
 
-void timeSleep(int seconds);
+//void timeSleep(int seconds);
 
 Color setOpacity(Color color, float opacity);
 
@@ -32,7 +32,7 @@ bool isHoverRect(Rectangle rect);
 
 void onHoverRect(Rectangle rect);
 
-void wait(int seconds);
+void wait(int seconds, Callback callback);
 
 #endif
 

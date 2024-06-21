@@ -15,12 +15,9 @@ void endGame() {
 }
 
 void drawEndgameWindow() {
-//    if (getEndgame()) {
+    DrawRectangle(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT, setOpacity(BLACK, 0.75));
     DrawContainer(restartButton, 0, WHITE);
-    DrawRectangle(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT, setOpacity(BLACK, 0.5));
-
     DrawUnicodeText(text, getCenter(restartButton.destRect, currMeasureText), 34, 0, WHITE);
-//    }
 }
 
 void onClickRestartButton(Callback callback) {

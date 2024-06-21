@@ -19,7 +19,7 @@ UnicodeText newUnicodeText(const char *fontDirectory, char *value) {
     result.codepointCount = 0;
     result.codepoints = LoadCodepoints(value, &result.codepointCount);
     Font temp = LoadFont(fontDirectory);
-    result.font = LoadFontEx(fontDirectory, temp.baseSize, result.codepoints, result.codepointCount + 100);
+    result.font = LoadFontEx(fontDirectory, temp.baseSize, result.codepoints, result.codepointCount + 5);
     UnloadCodepoints(result.codepoints);
     SetTextureFilter(result.font.texture, TEXTURE_FILTER_TRILINEAR);
     return result;

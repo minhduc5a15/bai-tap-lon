@@ -3,7 +3,16 @@
 
 #include "../common.h"
 
-int *audiencePoll(char correctAnswer);
+Container assistanceContainer;
+Assistance fiftyfiftyAssist;
+Assistance plusOneAssist;
+Assistance askExpertAssist;
+
+void setAssistanceContainer(void);
+
+void drawAssistanceContainer(void);
+
+char plusOne(char correctAnswer);
 
 char *fiftyFifty(char correctAnswer);
 

@@ -50,12 +50,12 @@ void setTimeout(Callback callback, int seconds) {
     return callback();
 }
 
-void timeSleep(int seconds) {
-    int start = GetTime();
-    while (start < seconds) {
-        start = GetTime();
-    }
-}
+//void timeSleep(int seconds) {
+//    int start = GetTime();
+//    while (start < seconds) {
+//        start = GetTime();
+//    }
+//}
 
 char *addStr(const char *s1, const char *s2) {
     char *result = malloc(strlen(s1) + strlen(s2) + 1); // +1 for the null-terminator
@@ -82,8 +82,7 @@ void onHoverRect(Rectangle rect) {
     }
 }
 
-
-void wait(int seconds) {
+void wait(int seconds, Callback callback) {
     int start = GetTime();
     int dest = start + seconds;
     int prev = start;
@@ -92,5 +91,6 @@ void wait(int seconds) {
         if (prev != start) printf("%d\n", start);
         prev = start;
     }
+    callback();
     printf("end = %d\n", dest);
 }

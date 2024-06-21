@@ -12,13 +12,7 @@
 #include <raylib.h>
 #include <cjson/cJSON.h>
 #define mousePos GetMousePosition()
-#define false 0
-#define true 1
 typedef void (*Callback)();
-
-//typedef void (*Callbacki)(int);
-//
-//typedef void (CallbackContainer)(void *);
 
 typedef Vector2 V2;
 typedef Texture2D T2;
@@ -49,6 +43,13 @@ extern const char *BACKGROUND_IMAGE; /* Đường dẫn tới background */
 extern const char *START_BACKGROUND;
 extern const char *QUESTION_IMAGE; /* Đường dẫn tới background của câu hỏi */
 extern const char *DEFAULT_FONT;
+extern const char *ASSISTANCES;
+extern const char *FIFTY_FIFTY;
+extern const char *FIFTY_FIFTY_USED;
+extern const char *PLUS_ONE;
+extern const char *PLUS_ONE_USED;
+extern const char *ASK_EXPERT;
+extern const char *ASK_EXPERT_USED;
 extern const char *A_ANSWER;
 extern const char *A_ANSWER_SELECTED;
 extern const char *A_RIGHT_ANSWER;
