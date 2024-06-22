@@ -1,0 +1,3 @@
+"D:\Programs\CLion 2023.3.2\bin\cmake\win\x64\bin\cmake.exe" -E rm -f CMakeFiles\raylib_project.dir/objects.a
+D:\Programs\msys64\mingw64\bin\ar.exe qc CMakeFiles\raylib_project.dir/objects.a @CMakeFiles\raylib_project.dir\objects1.rsp
+D:\Programs\msys64\mingw64\bin\cc.exe -g -Wl,--whole-archive CMakeFiles\raylib_project.dir/objects.a -Wl,--no-whole-archive -o raylib_project.exe -Wl,--out-implib,libraylib_project.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\raylib_project.dir\linkLibs.rsp

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="MyProject"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\Programs\;CMake Files\..\..\..\Programs\msys64\;CMake Files\..\..\..\Programs\msys64\mingw64\;CMake Files\..\..\..\Programs\msys64\mingw64\lib\;CMake Files\..\..\..\Programs\msys64\mingw64\lib\cmake\;CMake Files\..\..\..\Programs\msys64\mingw64\lib\cmake\CURL\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="D:/code/Repositories/raylib_project/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="D:/Programs/msys64/mingw64/bin/mingw32-make.exe -f &quot;D:/code/Repositories/raylib_project/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="D:/Programs/msys64/mingw64/bin/mingw32-make.exe -f &quot;D:/code/Repositories/raylib_project/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/Programs/msys64/mingw64/bin/mingw32-make.exe -f &quot;D:/code/Repositories/raylib_project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/Programs/msys64/mingw64/bin/mingw32-make.exe -f &quot;D:/code/Repositories/raylib_project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="myapp">
+				<Option output="D:/code/Repositories/raylib_project/cmake-build-debug/myapp.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/code/Repositories/raylib_project/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="D:/Programs/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../include/c++/14.1.0"/>
+					<Add directory="D:/Programs/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../include/c++/14.1.0/x86_64-w64-mingw32"/>
+					<Add directory="D:/Programs/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../include/c++/14.1.0/backward"/>
+					<Add directory="D:/Programs/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/include"/>
+					<Add directory="D:/Programs/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../include"/>
+					<Add directory="D:/Programs/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/include-fixed"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="D:/Programs/msys64/mingw64/bin/mingw32-make.exe -f &quot;D:/code/Repositories/raylib_project/cmake-build-debug/Makefile&quot;  VERBOSE=1 myapp"/>
+					<CompileFile command="D:/Programs/msys64/mingw64/bin/mingw32-make.exe -f &quot;D:/code/Repositories/raylib_project/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/Programs/msys64/mingw64/bin/mingw32-make.exe -f &quot;D:/code/Repositories/raylib_project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/Programs/msys64/mingw64/bin/mingw32-make.exe -f &quot;D:/code/Repositories/raylib_project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="myapp/fast">
+				<Option output="D:/code/Repositories/raylib_project/cmake-build-debug/myapp.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/code/Repositories/raylib_project/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="D:/Programs/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../include/c++/14.1.0"/>
+					<Add directory="D:/Programs/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../include/c++/14.1.0/x86_64-w64-mingw32"/>
+					<Add directory="D:/Programs/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../include/c++/14.1.0/backward"/>
+					<Add directory="D:/Programs/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/include"/>
+					<Add directory="D:/Programs/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/../../../../include"/>
+					<Add directory="D:/Programs/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/14.1.0/include-fixed"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="D:/Programs/msys64/mingw64/bin/mingw32-make.exe -f &quot;D:/code/Repositories/raylib_project/cmake-build-debug/Makefile&quot;  VERBOSE=1 myapp/fast"/>
+					<CompileFile command="D:/Programs/msys64/mingw64/bin/mingw32-make.exe -f &quot;D:/code/Repositories/raylib_project/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/Programs/msys64/mingw64/bin/mingw32-make.exe -f &quot;D:/code/Repositories/raylib_project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/Programs/msys64/mingw64/bin/mingw32-make.exe -f &quot;D:/code/Repositories/raylib_project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="D:/code/Repositories/raylib_project/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="D:/Programs/msys64/mingw64/bin/mingw32-make.exe -f &quot;D:/code/Repositories/raylib_project/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="D:/Programs/msys64/mingw64/bin/mingw32-make.exe -f &quot;D:/code/Repositories/raylib_project/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/Programs/msys64/mingw64/bin/mingw32-make.exe -f &quot;D:/code/Repositories/raylib_project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/Programs/msys64/mingw64/bin/mingw32-make.exe -f &quot;D:/code/Repositories/raylib_project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="D:/code/Repositories/raylib_project/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="D:/Programs/msys64/mingw64/bin/mingw32-make.exe -f &quot;D:/code/Repositories/raylib_project/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="D:/Programs/msys64/mingw64/bin/mingw32-make.exe -f &quot;D:/code/Repositories/raylib_project/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/Programs/msys64/mingw64/bin/mingw32-make.exe -f &quot;D:/code/Repositories/raylib_project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/Programs/msys64/mingw64/bin/mingw32-make.exe -f &quot;D:/code/Repositories/raylib_project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="D:/code/Repositories/raylib_project/main.c">
+			<Option target="myapp"/>
+		</Unit>
+		<Unit filename="D:/code/Repositories/raylib_project/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="D:/code/Repositories/raylib_project/../../../Programs/msys64/mingw64/lib/cmake/CURL/CURLConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\Programs\msys64\mingw64\lib\cmake\CURL\"/>
+		</Unit>
+		<Unit filename="D:/code/Repositories/raylib_project/../../../Programs/msys64/mingw64/lib/cmake/CURL/CURLConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\Programs\msys64\mingw64\lib\cmake\CURL\"/>
+		</Unit>
+		<Unit filename="D:/code/Repositories/raylib_project/../../../Programs/msys64/mingw64/lib/cmake/CURL/CURLTargets-release.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\Programs\msys64\mingw64\lib\cmake\CURL\"/>
+		</Unit>
+		<Unit filename="D:/code/Repositories/raylib_project/../../../Programs/msys64/mingw64/lib/cmake/CURL/CURLTargets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\Programs\msys64\mingw64\lib\cmake\CURL\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
