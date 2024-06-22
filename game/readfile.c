@@ -43,7 +43,7 @@ void readQuestions(cJSON *json_array, Question **questions, int *questions_count
 }
 
 void saveData(Question **db, int *data_count, char *range) {
-    const char *filename = "resource/data.json";
+    const char *filename = DATA;
     char *file_content = readFile(filename);
     if (!file_content) {
         return;

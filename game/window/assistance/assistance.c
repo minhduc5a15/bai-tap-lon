@@ -1,6 +1,5 @@
 #include "assistance.h"
 
-static V2 icon = {69, 42};
 static const int iconWidth = 69;
 static const int iconHeight = 42;
 
@@ -35,8 +34,6 @@ void setAssistanceContainer() {
     }
 }
 
-bool isDrew = false;
-
 void drawAssistanceContainer() {
     DrawContainer(assistanceContainer, 0, WHITE);
     if (!fiftyfiftyAssist.isUsed) {
@@ -57,26 +54,6 @@ void drawAssistanceContainer() {
     else {
         DrawContainer(askExpertAssist.usedContainer, 0, WHITE);
     }
-}
-
-int *audiencePoll(char correctAnswer) {
-    int *percentages = (int *) calloc(4, sizeof(int));
-    int correctId = correctAnswer - 'A';
-    percentages[correctId] = 70 + rand() % 21;
-    int remain = 100 - percentages[correctId];
-    int other[3];
-    int idx = 0;
-    for (int i = 0; i < 4; ++i) {
-        if (i != correctId) {
-            other[idx++] = i;
-        }
-    }
-    percentages[other[0]] = rand() % (remain + 1);
-    remain -= percentages[other[0]];
-    percentages[other[1]] = rand() % (remain + 1);
-    remain -= percentages[other[1]];
-    percentages[other[2]] = remain;
-    return percentages;
 }
 
 char *fiftyFifty(char correctAnswer) {
@@ -131,7 +108,7 @@ char plusOne(char correctAnswer) {
         }
     }
     return answers[rand() % 3];
-};
+}
 
 char askExpert(char correctAnswer) {
     float probability = (float) rand() / RAND_MAX;

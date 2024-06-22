@@ -1,3 +1,0 @@
-"D:\Programs\CLion 2023.3.2\bin\cmake\win\x64\bin\cmake.exe" -E rm -f CMakeFiles\myapp.dir/objects.a
-D:\Programs\msys64\mingw64\bin\ar.exe qc CMakeFiles\myapp.dir/objects.a @CMakeFiles\myapp.dir\objects1.rsp
-D:\Programs\msys64\mingw64\bin\cc.exe -g -Wl,--whole-archive CMakeFiles\myapp.dir/objects.a -Wl,--no-whole-archive -o myapp.exe -Wl,--out-implib,libmyapp.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\myapp.dir\linkLibs.rsp

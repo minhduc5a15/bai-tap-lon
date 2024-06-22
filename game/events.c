@@ -69,7 +69,7 @@ static void nextLevel() {
     setCurrLevel(getCurrLevel() + 1);
     setPassed(true);
     setIsSleeping(false);
-    Sound s = LoadSound("D:/code/Repositories/raylib_project/assets/audio/Correct_Answer.mp3");
+    Sound s = LoadSound(CORRECT_ANSWER_SOUND);
     PlaySound(s);
 }
 
@@ -94,7 +94,7 @@ static void stop() {
     showCorrectAnswer();
     setPassed(true);
     setIsSleeping(false);
-    Sound s = LoadSound("D:/code/Repositories/raylib_project/assets/audio/Losing_Answer.mp3");
+    Sound s = LoadSound(WRONG_ANSWER_SOUND);
     PlaySound(s);
 }
 
@@ -129,7 +129,7 @@ static void start() {
     setStarted(true);
     setIsInit(true);
     createDatabase();
-    Sound s = LoadSound("D:/code/Repositories/raylib_project/assets/audio/Start or end background sound.mp3");
+    Sound s = LoadSound(START_SOUND);
     PlaySound(s);
 }
 
@@ -144,7 +144,7 @@ void onEvents() {
         onHoverContainer(&ansContainerB.container, nullptr);
         onHoverContainer(&ansContainerC.container, nullptr);
         onHoverContainer(&ansContainerD.container, nullptr);
-        onHoverRect(currentDialog.button);
+        onHoverRect(currentDialog.okButton);
     }
 #endif
 #ifndef CLICK
@@ -153,7 +153,7 @@ void onEvents() {
         onClickRect(plusOneAssist.container.destRect, onClickPlusOne);
         onClickRect(askExpertAssist.container.destRect, onClickAskExpert);
         if (currentDialog.isOpening) {
-            onClickRect(currentDialog.button, onClose);
+            onClickRect(currentDialog.okButton, onClose);
         }
     }
     if (!getStarted()) {

@@ -77,7 +77,8 @@ struct Assistance {
 
 struct Dialog {
     Rectangle container;
-    Rectangle button;
+    Rectangle okButton;
+    Rectangle cancelButton;
     UnicodeText content;
     float radius;
     bool isOpening;
@@ -199,13 +200,19 @@ extern void drawRewardContainer();
 
 #endif
 
+#ifndef WINDOW_STOP_GAME
+extern Container stopGameButton;
+extern Dialog stopGameDialog;
+extern void setStopGame();
+extern void drawStopGame();
+
+#endif
 #ifndef WINDOW_ASSISTANCE_H
 
 extern Container assistanceContainer;
 extern Assistance fiftyfiftyAssist;
 extern Assistance plusOneAssist;
 extern Assistance askExpertAssist;
-//extern Assistance
 
 extern void setAssistanceContainer(void);
 

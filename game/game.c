@@ -14,7 +14,6 @@ bool getStarted() {
 
 #endif // STARTED_GAME
 
-// --------------------- CURRENT ANSWER ---------------------
 #ifndef CURRENT_ANSWER
 #define CURRENT_ANSWER
 bool passed = false;
@@ -60,7 +59,6 @@ bool getRunning() {
 #endif // RUNNING
 // -----------------------------------------
 
-// --------------------- CURRENT CLICKED CONTAINER ---------------------
 #ifndef CURRENT_CLICKED_CONTAINER
 #define CURRENT_CLICKED_CONTAINER
 Container *currentClickContainer = nullptr;
@@ -77,7 +75,6 @@ void *getCurrentClickContainer() {
 #endif // CURRENT_CLICKED_CONTAINER
 // -----------------------------------------
 
-// --------------------- CURRENT ANSWER ---------------------
 #ifndef CURRENT_ANSWER
 #define CURRENT_ANSWER
 char *currAnswer = "";

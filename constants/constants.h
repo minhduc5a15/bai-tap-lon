@@ -34,15 +34,20 @@ __attribute__((unused)) typedef enum LEVELS {
     LEVEL_14,
     LEVEL_15
 } questions;
+#ifndef WINDOW_STATES
 extern const int SCREEN_WIDTH; /* px */
 extern const int SCREEN_HEIGHT; /* px */
 extern const int FPS; /* Frames per second */
+extern const char *TITLE_WINDOW_GAME;
+#endif
 extern const int PADDING_LEFT; /*px */
 extern const int SPACING; /*px */
+extern const char *DATA;
+extern const char *DEFAULT_FONT;
+#ifndef IMAGES
 extern const char *BACKGROUND_IMAGE; /* Đường dẫn tới background */
 extern const char *START_BACKGROUND;
 extern const char *QUESTION_IMAGE; /* Đường dẫn tới background của câu hỏi */
-extern const char *DEFAULT_FONT;
 extern const char *ASSISTANCES;
 extern const char *FIFTY_FIFTY;
 extern const char *FIFTY_FIFTY_USED;
@@ -66,9 +71,14 @@ extern const char *CURRENT_LEVEL_BG;
 extern const char *REWARDS_BG;
 extern const char *REWARD_BOX;
 extern const char *LOGO;
-extern const Color TEXT_COLOR;
 extern const char *START_BUTTON;
 extern const char *REWARD_BOARD;
-extern const char *TITLE_WINDOW_GAME;
+#endif
+extern const Color TEXT_COLOR;
 extern const Color TRANSPARENT;
+#ifndef SOUND
+extern const char *CORRECT_ANSWER_SOUND;
+extern const char *WRONG_ANSWER_SOUND;
+extern const char *START_SOUND;
+#endif
 #endif
