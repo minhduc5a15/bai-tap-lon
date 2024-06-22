@@ -4,7 +4,7 @@
 
 ### Chủ đề: Game "Ai là triệu phú"
 
-### Tác giả:
+### Trưởng nhóm:
 [Phạm Minh Đức](http://laptrinhonline.club/user/MinhDuc_CNTT1_K64)
 
 ### Thành viên nhóm:
