@@ -1,6 +1,6 @@
 # Bài Tập Lớn
 
-## Bài tập lớn môn kỹ thuật lập trình năm nhất của nhóm 6
+## Bài tập lớn môn kỹ thuật lập trình năm nhất của nhóm 5
 
 ### Chủ đề: Game "Ai là triệu phú"
 
