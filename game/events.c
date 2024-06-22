@@ -12,9 +12,6 @@ static void onClickFiftyFifty() {
     fiftyfiftyAssist.isUsed = true;
     auto removeAnswers = fiftyFifty(correctAns);
     for (int i = 0; i < 2; ++i) {
-        printf("%c ", removeAnswers[i]);
-    }
-    for (int i = 0; i < 2; ++i) {
         switch (removeAnswers[i]) {
             case 'A':
                 ansContainerA.answer.value = newUnicodeText(DEFAULT_FONT, " ");
@@ -46,7 +43,6 @@ static void onClickPlusOne() {
     setDialog(&currentDialog, rect, btnRect, addStr("Bạn đồng hành gợi ý đáp án ", temp));
     currentDialog.isOpening = true;
     plusOneAssist.isUsed = true;
-    printf("suggestedAnswer %c\n", suggestedAnswer);
 }
 
 static void onClickAskExpert() {
@@ -60,7 +56,6 @@ static void onClickAskExpert() {
     setDialog(&currentDialog, rect, btnRect, addStr("Các chuyên gia gợi ý đáp án ", temp));
     currentDialog.isOpening = true;
     askExpertAssist.isUsed = true;
-    printf("suggestedAnswer %c\n", suggestedAnswer);
 }
 
 static void onClose() {
@@ -84,7 +79,6 @@ static void chooseCorrectAnswer() {
     SetMouseCursor(MOUSE_CURSOR_DEFAULT);
     sleep(1);
     nextLevel();
-    printf("CURRENT LEVEL: %d\n", getCurrLevel());
 }
 
 static void nextQuestion() {

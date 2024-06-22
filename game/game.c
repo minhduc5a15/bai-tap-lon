@@ -1,19 +1,22 @@
 #include "game.h"
 
-// --------------------- IS STARTED GAME ---------------------
+#ifndef STARTED_GAME
+#define STARTED_GAME
 bool started = false;
 
 void setStarted(bool value) {
     started = value;
-    printf("started: %d\n", started);
 }
 
 bool getStarted() {
     return started;
 }
-// ------------------------------------------
+
+#endif // STARTED_GAME
 
 // --------------------- CURRENT ANSWER ---------------------
+#ifndef CURRENT_ANSWER
+#define CURRENT_ANSWER
 bool passed = false;
 
 void setPassed(bool value) {
@@ -23,11 +26,11 @@ void setPassed(bool value) {
 bool getPassed() {
     return passed;
 }
-// ------------------------------------------
 
+#endif // CURRENT_ANSWER
 
-// --------------------- LEVEL ---------------------
-
+#ifndef CURRENT_LEVEL
+#define CURRENT_LEVEL
 int currLevel = 0;
 
 void setCurrLevel(int value) {
@@ -39,9 +42,10 @@ int getCurrLevel() {
     return currLevel;
 }
 
-// -----------------------------------------
+#endif // CURRENT_LEVEL
 
-// --------------------- RUNNING ---------------------
+#ifndef RUNNING
+#define RUNNING
 bool running = true;
 
 void setRunning(bool value) {
@@ -53,11 +57,13 @@ bool getRunning() {
     return running;
 }
 
+#endif // RUNNING
 // -----------------------------------------
 
 // --------------------- CURRENT CLICKED CONTAINER ---------------------
-Container *currentClickContainer = NULL;
-
+#ifndef CURRENT_CLICKED_CONTAINER
+#define CURRENT_CLICKED_CONTAINER
+Container *currentClickContainer = nullptr;
 
 void *setCurrentClickContainer(void *container) {
     currentClickContainer = container;
@@ -68,10 +74,12 @@ void *getCurrentClickContainer() {
     return currentClickContainer;
 }
 
+#endif // CURRENT_CLICKED_CONTAINER
 // -----------------------------------------
 
 // --------------------- CURRENT ANSWER ---------------------
-
+#ifndef CURRENT_ANSWER
+#define CURRENT_ANSWER
 char *currAnswer = "";
 
 void setCurrAnswer(char *answer) {
@@ -81,7 +89,7 @@ void setCurrAnswer(char *answer) {
 char *getCurrAnswer() {
     return currAnswer;
 }
-
+#endif // CURRENT_ANSWER
 // -----------------------------------------
 
 // --------------------- END GAME ---------------------
@@ -91,6 +99,7 @@ void setEndgame(bool value) { endgame = value; }
 
 bool getEndgame() { return endgame; }
 // -----------------------------------------
+
 // --------------------- SLEEPING ---------------------
 
 bool isSleeping = false;

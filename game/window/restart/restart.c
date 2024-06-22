@@ -1,6 +1,5 @@
 #include "restart.h"
 
-
 static UnicodeText text;
 static const int width = 300;
 static const int height = 75;

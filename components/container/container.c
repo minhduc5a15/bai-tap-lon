@@ -1,6 +1,6 @@
 #include "container.h"
 
-Rectangle *currentHoverRect = NULL;
+Rectangle *currentHoverRect = nullptr;
 
 __attribute__((unused)) void containerInit(Container *container, Image img, Image imgSelected, Rectangle destRect, V2 position) {
     *container = (Container) {img, imgSelected, LoadTextureFromImage(img), LoadTextureFromImage(imgSelected), (Rectangle) {0, 0, img.width, img.height}, destRect, position, WHITE, false};

@@ -1,13 +1,5 @@
 #include "functions.h"
 
-int max(int a, int b) {
-    return a > b ? a : b;
-}
-
-int min(int a, int b) {
-    return a < b ? a : b;
-}
-
 bool isClicked() {
     return IsMouseButtonPressed(MOUSE_BUTTON_LEFT);
 }
@@ -32,30 +24,11 @@ V2 getRight(Rectangle parent, V2 child, int padding_left, int bonus_left) {
     return (V2) {parent.x + bonus_left + padding_left, parent.y + parent.height / 2 - child.y / 2};
 }
 
-void test() {
-    printf("Hello world\n");
-}
-
 Color setOpacity(Color color, float opacity) {
     float alpha = color.a;
     color.a = alpha * opacity;
     return color;
 }
-
-void setTimeout(Callback callback, int seconds) {
-    int start = GetTime();
-    while (start < seconds) {
-        start = GetTime();
-    }
-    return callback();
-}
-
-//void timeSleep(int seconds) {
-//    int start = GetTime();
-//    while (start < seconds) {
-//        start = GetTime();
-//    }
-//}
 
 char *addStr(const char *s1, const char *s2) {
     char *result = malloc(strlen(s1) + strlen(s2) + 1); // +1 for the null-terminator
@@ -71,26 +44,9 @@ void onClickRect(Rectangle rect, Callback callback) {
     }
 }
 
-bool isHoverRect(Rectangle rect) {
-    return CheckCollisionPointRec(mousePos, rect);
-}
-
 void onHoverRect(Rectangle rect) {
     if (isClicked() && CheckCollisionPointRec(mousePos, rect)) {
         SetMouseCursor(MOUSE_CURSOR_POINTING_HAND);
         return;
     }
-}
-
-void wait(int seconds, Callback callback) {
-    int start = GetTime();
-    int dest = start + seconds;
-    int prev = start;
-    while (start < dest) {
-        start = GetTime();
-        if (prev != start) printf("%d\n", start);
-        prev = start;
-    }
-    callback();
-    printf("end = %d\n", dest);
 }

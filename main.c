@@ -1,6 +1,6 @@
 #include "common.h"
 
-int main() {
+static void setup() {
     srand(time(NULL));
     SetTraceLogLevel(LOG_NONE);
     InitWindow(SCREEN_WIDTH, SCREEN_HEIGHT, TITLE_WINDOW_GAME);
@@ -12,6 +12,15 @@ int main() {
     endGame();
     setCurrLevel(LEVEL_1);
     setAssistanceContainer();
+}
+
+static void teardown() {
+    CloseAudioDevice();
+    CloseWindow();
+}
+
+int main() {
+    setup();
     while (!WindowShouldClose()) {
         if (!getPassed() && getCurrLevel() <= LEVEL_15) {
             int level = getCurrLevel();
@@ -44,13 +53,11 @@ int main() {
                 }
             }
             if (getEndgame()) {
-                printf("end game\n");
                 drawEndgameWindow();
             }
         }
         EndDrawing();
     }
-    CloseAudioDevice();
-    CloseWindow();
+    teardown();
     return 0;
 }

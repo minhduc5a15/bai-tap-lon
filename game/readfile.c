@@ -43,7 +43,7 @@ void readQuestions(cJSON *json_array, Question **questions, int *questions_count
 }
 
 void saveData(Question **db, int *data_count, char *range) {
-    const char *filename = "D:/code/Repositories/raylib_project/test.json";
+    const char *filename = "resource/data.json";
     char *file_content = readFile(filename);
     if (!file_content) {
         return;

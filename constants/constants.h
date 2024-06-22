@@ -64,6 +64,7 @@ extern const char *D_ANSWER_SELECTED;
 extern const char *D_RIGHT_ANSWER;
 extern const char *CURRENT_LEVEL_BG;
 extern const char *REWARDS_BG;
+extern const char *REWARD_BOX;
 extern const char *LOGO;
 extern const Color TEXT_COLOR;
 extern const char *START_BUTTON;

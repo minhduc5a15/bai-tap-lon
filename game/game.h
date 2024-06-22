@@ -191,6 +191,8 @@ extern Container rewardLogo;
 extern Container rewardBox;
 extern int currReward;
 
+extern void setRewardBox();
+
 extern void setRewardContainer(int level);
 
 extern void drawRewardContainer();

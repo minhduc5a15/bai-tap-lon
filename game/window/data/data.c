@@ -1,6 +1,6 @@
 #include "data.h"
 
-static void printQuest(Question question) {
+__attribute__((unused)) static void printQuest(Question question) {
     printf("Content: %s\n", question.content);
     printf("Answer A: %s\n", question.answers[0].value.text);
     printf("Answer B: %s\n", question.answers[1].value.text);
@@ -24,13 +24,5 @@ void createDatabase() {
         questionDb[i + 1] = temp1_5[questions1_5[i] - 1];
         questionDb[i + 6] = temp6_10[questions6_10[i] - 1];
         questionDb[i + 11] = temp6_10[questions11_15[i] - 1];
-    }
-    for (int i = LEVEL_1; i <= LEVEL_15; ++i) {
-        printf("câu thứ %d: \n", i);
-        printQuest(questionDb[i]);
-        for (int j = 0; j < 4; ++j) {
-//            questionDb[i].answers[j].value.text =
-        }
-        printf("--------------------------------\n");
     }
 }
