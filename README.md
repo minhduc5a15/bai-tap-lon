@@ -1,10 +1,10 @@
 # Bài Tập Lớn
 
-## Bài tập lớn môn kỹ thuật lập trình năm nhất của nhóm 6
+## Bài tập lớn môn kỹ thuật lập trình năm nhất của nhóm 5
 
 ### Chủ đề: Game "Ai là triệu phú"
 
-### Tác giả:
+### Trưởng nhóm:
 [Phạm Minh Đức](http://laptrinhonline.club/user/MinhDuc_CNTT1_K64)
 
 ### Thành viên nhóm:
