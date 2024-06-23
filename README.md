@@ -79,8 +79,8 @@ C
 
     - Chỉ khi có 2 dòng này thì mới tiếp tục: 
     ```shell
-        [100%] Linking C executable ${Bai-Tap-Lon}.exe
-        [100%] Built target ${Bai-Tap-Lon}
+        [100%] Linking C executable Bai-Tap-Lon.exe
+        [100%] Built target Bai-Tap-Lon
     ```
 - Trong file **[constants.c](https://github.com/minhduc5a15/Bai-Tap-Lon/blob/main/constants/constants.c)**, thay đổi đường dẫn 'resource/' thành đường dẫn tới dự án, dạng 'path/to/Bai-Tap-Lon' .
 - Cuối cùng chạy lệnh sau để xem kết quả.
