@@ -4,3 +4,4 @@ test.c
 *.css
 *.html
 *.py
+build

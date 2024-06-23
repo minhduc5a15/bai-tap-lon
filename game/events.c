@@ -120,6 +120,10 @@ static void restart() {
     setCurrLevel(LEVEL_1);
     setEndgame(false);
     setIsInit(false);
+    fiftyfiftyAssist.isUsed = false;
+    askExpertAssist.isUsed = false;
+    plusOneAssist.isUsed = false;
+    currentDialog.isOpening = false;
     createDatabase();
 }
 
