@@ -84,8 +84,8 @@ C
     ```
 - Trong file **[constants.c](https://github.com/minhduc5a15/Bai-Tap-Lon/blob/main/constants/constants.c)**, thay đổi đường dẫn 'resource/' thành đường dẫn tới dự án, dạng 'path/to/Bai-Tap-Lon' .
 - Cuối cùng chạy lệnh sau để xem kết quả.
-    ```shell
-        ./Bai-Tap-Lon.exe
-    ```
+```shell
+./raylib-project.exe
+```
 
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=21&duration=3500&pause=1000&color=46D4F7&multiline=true&repeat=false&random=false&width=435&lines=Happy+coding!!!%F0%9F%98%8A%F0%9F%98%8A%F0%9F%98%8A;----------------------;Quick+fox+jumps+nightly+above+wizard)](https://git.io/typing-svg)
